@@ -1,10 +1,60 @@
 <!DOCTYPE html>
-<html lang="pt-BR" dir="ltr">
+<html lang="pt-PT">
+<head><meta charset="UTF-8"><script>if(navigator.userAgent.match(/MSIE|Internet Explorer/i)||navigator.userAgent.match(/Trident\/7\..*?rv:11/i)){var href=document.location.href;if(!href.match(/[?&]nowprocket/)){if(href.indexOf("?")==-1){if(href.indexOf("#")==-1){document.location.href=href+"?nowprocket=1"}else{document.location.href=href.replace("#","?nowprocket=1#")}}else{if(href.indexOf("#")==-1){document.location.href=href+"&nowprocket=1"}else{document.location.href=href.replace("#","&nowprocket=1#")}}}}</script><script>(()=>{class RocketLazyLoadScripts{constructor(){this.v="1.2.6",this.triggerEvents=["keydown","mousedown","mousemove","touchmove","touchstart","touchend","wheel"],this.userEventHandler=this.t.bind(this),this.touchStartHandler=this.i.bind(this),this.touchMoveHandler=this.o.bind(this),this.touchEndHandler=this.h.bind(this),this.clickHandler=this.u.bind(this),this.interceptedClicks=[],this.interceptedClickListeners=[],this.l(this),window.addEventListener("pageshow",(t=>{this.persisted=t.persisted,this.everythingLoaded&&this.m()})),this.CSPIssue=sessionStorage.getItem("rocketCSPIssue"),document.addEventListener("securitypolicyviolation",(t=>{this.CSPIssue||"script-src-elem"!==t.violatedDirective||"data"!==t.blockedURI||(this.CSPIssue=!0,sessionStorage.setItem("rocketCSPIssue",!0))})),document.addEventListener("DOMContentLoaded",(()=>{this.k()})),this.delayedScripts={normal:[],async:[],defer:[]},this.trash=[],this.allJQueries=[]}p(t){document.hidden?t.t():(this.triggerEvents.forEach((e=>window.addEventListener(e,t.userEventHandler,{passive:!0}))),window.addEventListener("touchstart",t.touchStartHandler,{passive:!0}),window.addEventListener("mousedown",t.touchStartHandler),document.addEventListener("visibilitychange",t.userEventHandler))}_(){this.triggerEvents.forEach((t=>window.removeEventListener(t,this.userEventHandler,{passive:!0}))),document.removeEventListener("visibilitychange",this.userEventHandler)}i(t){"HTML"!==t.target.tagName&&(window.addEventListener("touchend",this.touchEndHandler),window.addEventListener("mouseup",this.touchEndHandler),window.addEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.addEventListener("mousemove",this.touchMoveHandler),t.target.addEventListener("click",this.clickHandler),this.L(t.target,!0),this.S(t.target,"onclick","rocket-onclick"),this.C())}o(t){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler),t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.M()}h(){window.removeEventListener("touchend",this.touchEndHandler),window.removeEventListener("mouseup",this.touchEndHandler),window.removeEventListener("touchmove",this.touchMoveHandler,{passive:!0}),window.removeEventListener("mousemove",this.touchMoveHandler)}u(t){t.target.removeEventListener("click",this.clickHandler),this.L(t.target,!1),this.S(t.target,"rocket-onclick","onclick"),this.interceptedClicks.push(t),t.preventDefault(),t.stopPropagation(),t.stopImmediatePropagation(),this.M()}O(){window.removeEventListener("touchstart",this.touchStartHandler,{passive:!0}),window.removeEventListener("mousedown",this.touchStartHandler),this.interceptedClicks.forEach((t=>{t.target.dispatchEvent(new MouseEvent("click",{view:t.view,bubbles:!0,cancelable:!0}))}))}l(t){EventTarget.prototype.addEventListenerWPRocketBase=EventTarget.prototype.addEventListener,EventTarget.prototype.addEventListener=function(e,i,o){"click"!==e||t.windowLoaded||i===t.clickHandler||t.interceptedClickListeners.push({target:this,func:i,options:o}),(this||window).addEventListenerWPRocketBase(e,i,o)}}L(t,e){this.interceptedClickListeners.forEach((i=>{i.target===t&&(e?t.removeEventListener("click",i.func,i.options):t.addEventListener("click",i.func,i.options))})),t.parentNode!==document.documentElement&&this.L(t.parentNode,e)}D(){return new Promise((t=>{this.P?this.M=t:t()}))}C(){this.P=!0}M(){this.P=!1}S(t,e,i){t.hasAttribute&&t.hasAttribute(e)&&(event.target.setAttribute(i,event.target.getAttribute(e)),event.target.removeAttribute(e))}t(){this._(this),"loading"===document.readyState?document.addEventListener("DOMContentLoaded",this.R.bind(this)):this.R()}k(){let t=[];document.querySelectorAll("script[type=rocketlazyloadscript][data-rocket-src]").forEach((e=>{let i=e.getAttribute("data-rocket-src");if(i&&!i.startsWith("data:")){0===i.indexOf("//")&&(i=location.protocol+i);try{const o=new URL(i).origin;o!==location.origin&&t.push({src:o,crossOrigin:e.crossOrigin||"module"===e.getAttribute("data-rocket-type")})}catch(t){}}})),t=[...new Map(t.map((t=>[JSON.stringify(t),t]))).values()],this.T(t,"preconnect")}async R(){this.lastBreath=Date.now(),this.j(this),this.F(this),this.I(),this.W(),this.q(),await this.A(this.delayedScripts.normal),await this.A(this.delayedScripts.defer),await this.A(this.delayedScripts.async);try{await this.U(),await this.H(this),await this.J()}catch(t){console.error(t)}window.dispatchEvent(new Event("rocket-allScriptsLoaded")),this.everythingLoaded=!0,this.D().then((()=>{this.O()})),this.N()}W(){document.querySelectorAll("script[type=rocketlazyloadscript]").forEach((t=>{t.hasAttribute("data-rocket-src")?t.hasAttribute("async")&&!1!==t.async?this.delayedScripts.async.push(t):t.hasAttribute("defer")&&!1!==t.defer||"module"===t.getAttribute("data-rocket-type")?this.delayedScripts.defer.push(t):this.delayedScripts.normal.push(t):this.delayedScripts.normal.push(t)}))}async B(t){if(await this.G(),!0!==t.noModule||!("noModule"in HTMLScriptElement.prototype))return new Promise((e=>{let i;function o(){(i||t).setAttribute("data-rocket-status","executed"),e()}try{if(navigator.userAgent.indexOf("Firefox/")>0||""===navigator.vendor||this.CSPIssue)i=document.createElement("script"),[...t.attributes].forEach((t=>{let e=t.nodeName;"type"!==e&&("data-rocket-type"===e&&(e="type"),"data-rocket-src"===e&&(e="src"),i.setAttribute(e,t.nodeValue))})),t.text&&(i.text=t.text),i.hasAttribute("src")?(i.addEventListener("load",o),i.addEventListener("error",(function(){i.setAttribute("data-rocket-status","failed-network"),e()})),setTimeout((()=>{i.isConnected||e()}),1)):(i.text=t.text,o()),t.parentNode.replaceChild(i,t);else{const i=t.getAttribute("data-rocket-type"),s=t.getAttribute("data-rocket-src");i?(t.type=i,t.removeAttribute("data-rocket-type")):t.removeAttribute("type"),t.addEventListener("load",o),t.addEventListener("error",(i=>{this.CSPIssue&&i.target.src.startsWith("data:")?(console.log("WPRocket: data-uri blocked by CSP -> fallback"),t.removeAttribute("src"),this.B(t).then(e)):(t.setAttribute("data-rocket-status","failed-network"),e())})),s?(t.removeAttribute("data-rocket-src"),t.src=s):t.src="data:text/javascript;base64,"+window.btoa(unescape(encodeURIComponent(t.text)))}}catch(i){t.setAttribute("data-rocket-status","failed-transform"),e()}}));t.setAttribute("data-rocket-status","skipped")}async A(t){const e=t.shift();return e&&e.isConnected?(await this.B(e),this.A(t)):Promise.resolve()}q(){this.T([...this.delayedScripts.normal,...this.delayedScripts.defer,...this.delayedScripts.async],"preload")}T(t,e){var i=document.createDocumentFragment();t.forEach((t=>{const o=t.getAttribute&&t.getAttribute("data-rocket-src")||t.src;if(o&&!o.startsWith("data:")){const s=document.createElement("link");s.href=o,s.rel=e,"preconnect"!==e&&(s.as="script"),t.getAttribute&&"module"===t.getAttribute("data-rocket-type")&&(s.crossOrigin=!0),t.crossOrigin&&(s.crossOrigin=t.crossOrigin),t.integrity&&(s.integrity=t.integrity),i.appendChild(s),this.trash.push(s)}})),document.head.appendChild(i)}j(t){let e={};function i(i,o){return e[o].eventsToRewrite.indexOf(i)>=0&&!t.everythingLoaded?"rocket-"+i:i}function o(t,o){!function(t){e[t]||(e[t]={originalFunctions:{add:t.addEventListener,remove:t.removeEventListener},eventsToRewrite:[]},t.addEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.add.apply(t,arguments)},t.removeEventListener=function(){arguments[0]=i(arguments[0],t),e[t].originalFunctions.remove.apply(t,arguments)})}(t),e[t].eventsToRewrite.push(o)}function s(e,i){let o=e[i];e[i]=null,Object.defineProperty(e,i,{get:()=>o||function(){},set(s){t.everythingLoaded?o=s:e["rocket"+i]=o=s}})}o(document,"DOMContentLoaded"),o(window,"DOMContentLoaded"),o(window,"load"),o(window,"pageshow"),o(document,"readystatechange"),s(document,"onreadystatechange"),s(window,"onload"),s(window,"onpageshow");try{Object.defineProperty(document,"readyState",{get:()=>t.rocketReadyState,set(e){t.rocketReadyState=e},configurable:!0}),document.readyState="loading"}catch(t){console.log("WPRocket DJE readyState conflict, bypassing")}}F(t){let e;function i(e){return t.everythingLoaded?e:e.split(" ").map((t=>"load"===t||0===t.indexOf("load.")?"rocket-jquery-load":t)).join(" ")}function o(o){function s(t){const e=o.fn[t];o.fn[t]=o.fn.init.prototype[t]=function(){return this[0]===window&&("string"==typeof arguments[0]||arguments[0]instanceof String?arguments[0]=i(arguments[0]):"object"==typeof arguments[0]&&Object.keys(arguments[0]).forEach((t=>{const e=arguments[0][t];delete arguments[0][t],arguments[0][i(t)]=e}))),e.apply(this,arguments),this}}o&&o.fn&&!t.allJQueries.includes(o)&&(o.fn.ready=o.fn.init.prototype.ready=function(e){return t.domReadyFired?e.bind(document)(o):document.addEventListener("rocket-DOMContentLoaded",(()=>e.bind(document)(o))),o([])},s("on"),s("one"),t.allJQueries.push(o)),e=o}o(window.jQuery),Object.defineProperty(window,"jQuery",{get:()=>e,set(t){o(t)}})}async H(t){const e=document.querySelector("script[data-webpack]");e&&(await async function(){return new Promise((t=>{e.addEventListener("load",t),e.addEventListener("error",t)}))}(),await t.K(),await t.H(t))}async U(){this.domReadyFired=!0;try{document.readyState="interactive"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),document.dispatchEvent(new Event("rocket-DOMContentLoaded")),await this.G(),window.dispatchEvent(new Event("rocket-DOMContentLoaded"))}async J(){try{document.readyState="complete"}catch(t){}await this.G(),document.dispatchEvent(new Event("rocket-readystatechange")),await this.G(),document.rocketonreadystatechange&&document.rocketonreadystatechange(),await this.G(),window.dispatchEvent(new Event("rocket-load")),await this.G(),window.rocketonload&&window.rocketonload(),await this.G(),this.allJQueries.forEach((t=>t(window).trigger("rocket-jquery-load"))),await this.G();const t=new Event("rocket-pageshow");t.persisted=this.persisted,window.dispatchEvent(t),await this.G(),window.rocketonpageshow&&window.rocketonpageshow({persisted:this.persisted}),this.windowLoaded=!0}m(){document.onreadystatechange&&document.onreadystatechange(),window.onload&&window.onload(),window.onpageshow&&window.onpageshow({persisted:this.persisted})}I(){const t=new Map;document.write=document.writeln=function(e){const i=document.currentScript;i||console.error("WPRocket unable to document.write this: "+e);const o=document.createRange(),s=i.parentElement;let n=t.get(i);void 0===n&&(n=i.nextSibling,t.set(i,n));const c=document.createDocumentFragment();o.setStart(c,0),c.appendChild(o.createContextualFragment(e)),s.insertBefore(c,n)}}async G(){Date.now()-this.lastBreath>45&&(await this.K(),this.lastBreath=Date.now())}async K(){return document.hidden?new Promise((t=>setTimeout(t))):new Promise((t=>requestAnimationFrame(t)))}N(){this.trash.forEach((t=>t.remove()))}static run(){const t=new RocketLazyLoadScripts;t.p(t)}}RocketLazyLoadScripts.run()})();</script>
+	
+		<title>GM Brasil &#8211; L01 &#8211; Growth Brasil</title><link rel="preload" as="style" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CBebas%20Neue%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" /><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CBebas%20Neue%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" media="print" onload="this.media='all'" /><noscript><link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CRoboto%20Slab%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CPoppins%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CMontserrat%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic%7CBebas%20Neue%3A100%2C100italic%2C200%2C200italic%2C300%2C300italic%2C400%2C400italic%2C500%2C500italic%2C600%2C600italic%2C700%2C700italic%2C800%2C800italic%2C900%2C900italic&#038;display=swap" /></noscript><link rel="preload" as="image" href="https://images.converteai.net/8ac88e27-5706-492e-9bd5-175b98d538d6/players/6673434d570f36000b811df5/thumbnail.jpg" fetchpriority="high">
+<meta name='robots' content='noindex, nofollow' />
+<link href='https://fonts.gstatic.com' crossorigin rel='preconnect' />
+<link rel="alternate" type="application/rss+xml" title="Growth Brasil &raquo; Feed" href="https://homemvigor.online/feed/" />
+<link rel="alternate" type="application/rss+xml" title="Growth Brasil &raquo; Feed de comentários" href="https://homemvigor.online/comments/feed/" />
+<style id='wp-emoji-styles-inline-css'>
 
-<head>
+	img.wp-smiley, img.emoji {
+		display: inline !important;
+		border: none !important;
+		box-shadow: none !important;
+		height: 1em !important;
+		width: 1em !important;
+		margin: 0 0.07em !important;
+		vertical-align: -0.1em !important;
+		background: none !important;
+		padding: 0 !important;
+	}
+</style>
+<style id='classic-theme-styles-inline-css'>
+/*! This file is auto-generated */
+.wp-block-button__link{color:#fff;background-color:#32373c;border-radius:9999px;box-shadow:none;text-decoration:none;padding:calc(.667em + 2px) calc(1.333em + 2px);font-size:1.125em}.wp-block-file__button{background:#32373c;color:#fff;text-decoration:none}
+</style>
+<style id='global-styles-inline-css'>
+:root{--wp--preset--aspect-ratio--square: 1;--wp--preset--aspect-ratio--4-3: 4/3;--wp--preset--aspect-ratio--3-4: 3/4;--wp--preset--aspect-ratio--3-2: 3/2;--wp--preset--aspect-ratio--2-3: 2/3;--wp--preset--aspect-ratio--16-9: 16/9;--wp--preset--aspect-ratio--9-16: 9/16;--wp--preset--color--black: #000000;--wp--preset--color--cyan-bluish-gray: #abb8c3;--wp--preset--color--white: #ffffff;--wp--preset--color--pale-pink: #f78da7;--wp--preset--color--vivid-red: #cf2e2e;--wp--preset--color--luminous-vivid-orange: #ff6900;--wp--preset--color--luminous-vivid-amber: #fcb900;--wp--preset--color--light-green-cyan: #7bdcb5;--wp--preset--color--vivid-green-cyan: #00d084;--wp--preset--color--pale-cyan-blue: #8ed1fc;--wp--preset--color--vivid-cyan-blue: #0693e3;--wp--preset--color--vivid-purple: #9b51e0;--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple: linear-gradient(135deg,rgba(6,147,227,1) 0%,rgb(155,81,224) 100%);--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan: linear-gradient(135deg,rgb(122,220,180) 0%,rgb(0,208,130) 100%);--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange: linear-gradient(135deg,rgba(252,185,0,1) 0%,rgba(255,105,0,1) 100%);--wp--preset--gradient--luminous-vivid-orange-to-vivid-red: linear-gradient(135deg,rgba(255,105,0,1) 0%,rgb(207,46,46) 100%);--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray: linear-gradient(135deg,rgb(238,238,238) 0%,rgb(169,184,195) 100%);--wp--preset--gradient--cool-to-warm-spectrum: linear-gradient(135deg,rgb(74,234,220) 0%,rgb(151,120,209) 20%,rgb(207,42,186) 40%,rgb(238,44,130) 60%,rgb(251,105,98) 80%,rgb(254,248,76) 100%);--wp--preset--gradient--blush-light-purple: linear-gradient(135deg,rgb(255,206,236) 0%,rgb(152,150,240) 100%);--wp--preset--gradient--blush-bordeaux: linear-gradient(135deg,rgb(254,205,165) 0%,rgb(254,45,45) 50%,rgb(107,0,62) 100%);--wp--preset--gradient--luminous-dusk: linear-gradient(135deg,rgb(255,203,112) 0%,rgb(199,81,192) 50%,rgb(65,88,208) 100%);--wp--preset--gradient--pale-ocean: linear-gradient(135deg,rgb(255,245,203) 0%,rgb(182,227,212) 50%,rgb(51,167,181) 100%);--wp--preset--gradient--electric-grass: linear-gradient(135deg,rgb(202,248,128) 0%,rgb(113,206,126) 100%);--wp--preset--gradient--midnight: linear-gradient(135deg,rgb(2,3,129) 0%,rgb(40,116,252) 100%);--wp--preset--font-size--small: 13px;--wp--preset--font-size--medium: 20px;--wp--preset--font-size--large: 36px;--wp--preset--font-size--x-large: 42px;--wp--preset--spacing--20: 0.44rem;--wp--preset--spacing--30: 0.67rem;--wp--preset--spacing--40: 1rem;--wp--preset--spacing--50: 1.5rem;--wp--preset--spacing--60: 2.25rem;--wp--preset--spacing--70: 3.38rem;--wp--preset--spacing--80: 5.06rem;--wp--preset--shadow--natural: 6px 6px 9px rgba(0, 0, 0, 0.2);--wp--preset--shadow--deep: 12px 12px 50px rgba(0, 0, 0, 0.4);--wp--preset--shadow--sharp: 6px 6px 0px rgba(0, 0, 0, 0.2);--wp--preset--shadow--outlined: 6px 6px 0px -3px rgba(255, 255, 255, 1), 6px 6px rgba(0, 0, 0, 1);--wp--preset--shadow--crisp: 6px 6px 0px rgba(0, 0, 0, 1);}:where(.is-layout-flex){gap: 0.5em;}:where(.is-layout-grid){gap: 0.5em;}body .is-layout-flex{display: flex;}.is-layout-flex{flex-wrap: wrap;align-items: center;}.is-layout-flex > :is(*, div){margin: 0;}body .is-layout-grid{display: grid;}.is-layout-grid > :is(*, div){margin: 0;}:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}.has-black-color{color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-color{color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-color{color: var(--wp--preset--color--white) !important;}.has-pale-pink-color{color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-color{color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-color{color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-color{color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-color{color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-color{color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-color{color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-color{color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-color{color: var(--wp--preset--color--vivid-purple) !important;}.has-black-background-color{background-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-background-color{background-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-background-color{background-color: var(--wp--preset--color--white) !important;}.has-pale-pink-background-color{background-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-background-color{background-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-background-color{background-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-background-color{background-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-background-color{background-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-background-color{background-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-background-color{background-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-background-color{background-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-background-color{background-color: var(--wp--preset--color--vivid-purple) !important;}.has-black-border-color{border-color: var(--wp--preset--color--black) !important;}.has-cyan-bluish-gray-border-color{border-color: var(--wp--preset--color--cyan-bluish-gray) !important;}.has-white-border-color{border-color: var(--wp--preset--color--white) !important;}.has-pale-pink-border-color{border-color: var(--wp--preset--color--pale-pink) !important;}.has-vivid-red-border-color{border-color: var(--wp--preset--color--vivid-red) !important;}.has-luminous-vivid-orange-border-color{border-color: var(--wp--preset--color--luminous-vivid-orange) !important;}.has-luminous-vivid-amber-border-color{border-color: var(--wp--preset--color--luminous-vivid-amber) !important;}.has-light-green-cyan-border-color{border-color: var(--wp--preset--color--light-green-cyan) !important;}.has-vivid-green-cyan-border-color{border-color: var(--wp--preset--color--vivid-green-cyan) !important;}.has-pale-cyan-blue-border-color{border-color: var(--wp--preset--color--pale-cyan-blue) !important;}.has-vivid-cyan-blue-border-color{border-color: var(--wp--preset--color--vivid-cyan-blue) !important;}.has-vivid-purple-border-color{border-color: var(--wp--preset--color--vivid-purple) !important;}.has-vivid-cyan-blue-to-vivid-purple-gradient-background{background: var(--wp--preset--gradient--vivid-cyan-blue-to-vivid-purple) !important;}.has-light-green-cyan-to-vivid-green-cyan-gradient-background{background: var(--wp--preset--gradient--light-green-cyan-to-vivid-green-cyan) !important;}.has-luminous-vivid-amber-to-luminous-vivid-orange-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-amber-to-luminous-vivid-orange) !important;}.has-luminous-vivid-orange-to-vivid-red-gradient-background{background: var(--wp--preset--gradient--luminous-vivid-orange-to-vivid-red) !important;}.has-very-light-gray-to-cyan-bluish-gray-gradient-background{background: var(--wp--preset--gradient--very-light-gray-to-cyan-bluish-gray) !important;}.has-cool-to-warm-spectrum-gradient-background{background: var(--wp--preset--gradient--cool-to-warm-spectrum) !important;}.has-blush-light-purple-gradient-background{background: var(--wp--preset--gradient--blush-light-purple) !important;}.has-blush-bordeaux-gradient-background{background: var(--wp--preset--gradient--blush-bordeaux) !important;}.has-luminous-dusk-gradient-background{background: var(--wp--preset--gradient--luminous-dusk) !important;}.has-pale-ocean-gradient-background{background: var(--wp--preset--gradient--pale-ocean) !important;}.has-electric-grass-gradient-background{background: var(--wp--preset--gradient--electric-grass) !important;}.has-midnight-gradient-background{background: var(--wp--preset--gradient--midnight) !important;}.has-small-font-size{font-size: var(--wp--preset--font-size--small) !important;}.has-medium-font-size{font-size: var(--wp--preset--font-size--medium) !important;}.has-large-font-size{font-size: var(--wp--preset--font-size--large) !important;}.has-x-large-font-size{font-size: var(--wp--preset--font-size--x-large) !important;}
+:where(.wp-block-post-template.is-layout-flex){gap: 1.25em;}:where(.wp-block-post-template.is-layout-grid){gap: 1.25em;}
+:where(.wp-block-columns.is-layout-flex){gap: 2em;}:where(.wp-block-columns.is-layout-grid){gap: 2em;}
+:root :where(.wp-block-pullquote){font-size: 1.5em;line-height: 1.6;}
+</style>
+<link data-minify="1" rel='stylesheet' id='my_css-css' href='https://homemvigor.online/wp-content/cache/min/1/wp-content/plugins/payt-upsell-for-elementor/css/style.css?ver=1730435051' media='all' />
+<link rel='stylesheet' id='jquery-ui-core-css' href='https://homemvigor.online/wp-content/plugins/smartfunnel/assets/jquery-ui-1.12.0.custom/jquery-ui.min.css?ver=6.6.2' media='all' />
+<link rel='stylesheet' id='hello-elementor-css' href='https://homemvigor.online/wp-content/themes/hello-elementor/style.min.css?ver=3.0.1' media='all' />
+<link rel='stylesheet' id='hello-elementor-theme-style-css' href='https://homemvigor.online/wp-content/themes/hello-elementor/theme.min.css?ver=3.0.1' media='all' />
+<link rel='stylesheet' id='hello-elementor-header-footer-css' href='https://homemvigor.online/wp-content/themes/hello-elementor/header-footer.min.css?ver=3.0.1' media='all' />
+<link rel='stylesheet' id='elementor-frontend-css' href='https://homemvigor.online/wp-content/plugins/elementor/assets/css/frontend-lite.min.css?ver=3.23.4' media='all' />
+<link rel='stylesheet' id='elementor-post-5-css' href='https://homemvigor.online/wp-content/uploads/elementor/css/post-5.css?ver=1723640692' media='all' />
+<link data-minify="1" rel='stylesheet' id='swiper-css' href='https://homemvigor.online/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=1730435051' media='all' />
+<link rel='stylesheet' id='elementor-pro-css' href='https://homemvigor.online/wp-content/plugins/elementor-pro/assets/css/frontend-lite.min.css?ver=3.5.1' media='all' />
+<link rel='stylesheet' id='elementor-global-css' href='https://homemvigor.online/wp-content/uploads/elementor/css/global.css?ver=1723640694' media='all' />
+<link rel='stylesheet' id='elementor-post-343-css' href='https://homemvigor.online/wp-content/uploads/elementor/css/post-343.css?ver=1724686956' media='all' />
 
- <script>
-  window.pixelId = "66a00ac90db5004fae949327";
+<link rel="preconnect" href="https://fonts.gstatic.com/" crossorigin><script type="rocketlazyloadscript" data-rocket-src="https://homemvigor.online/wp-includes/js/jquery/jquery.min.js?ver=3.7.1" id="jquery-core-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://homemvigor.online/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1" id="jquery-migrate-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://homemvigor.online/wp-content/plugins/smartfunnel/assets/jquery-ui-1.12.0.custom/jquery-ui.min.js?ver=6.6.2" id="jquery-ui-core-js"></script>
+<link rel="https://api.w.org/" href="https://homemvigor.online/wp-json/" /><link rel="alternate" title="JSON" type="application/json" href="https://homemvigor.online/wp-json/wp/v2/pages/343" /><link rel="EditURI" type="application/rsd+xml" title="RSD" href="https://homemvigor.online/xmlrpc.php?rsd" />
+<meta name="generator" content="WordPress 6.6.2" />
+<link rel="canonical" href="https://homemvigor.online/gm-brasil-fb2/" />
+<link rel='shortlink' href='https://homemvigor.online/?p=343' />
+<link rel="alternate" title="oEmbed (JSON)" type="application/json+oembed" href="https://homemvigor.online/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhomemvigor.online%2Fgm-brasil-fb2%2F" />
+<link rel="alternate" title="oEmbed (XML)" type="text/xml+oembed" href="https://homemvigor.online/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fhomemvigor.online%2Fgm-brasil-fb2%2F&#038;format=xml" />
+<!-- HFCM by 99 Robots - Snippet # 1: Pixel FB (Money) -->
+<script type="rocketlazyloadscript">
+  window.pixelId = "664a2d448de28b6466313694";
   var a = document.createElement("script");
   a.setAttribute("async", "");
   a.setAttribute("defer", "");
@@ -12,565 +62,564 @@
   document.head.appendChild(a);
 </script>
 
-<script
-  src="https://cdn.utmify.com.br/scripts/utms/latest.js"
-  async
-  defer
-></script>
+<!-- Meta Pixel Code -->
+<script type="rocketlazyloadscript">
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1508878666521160');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1508878666521160&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 
+<!-- Meta Pixel Code -->
+<script type="rocketlazyloadscript">
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1094803132077141');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1094803132077141&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 
-<div class="bar-topo" style="background:#ff0000; color: #fff; padding: 10px 0; text-align: center;" bis_skin_checked="1">
-  <div class="container" style="font-size: 20px; font-weight: bold;" bis_skin_checked="1">
-    <script>
-      var today = new Date();
-      var formattedDate = today.toLocaleDateString('pt-BR'); // Formato de data: dd/mm/yyyy
-      document.write(formattedDate + " es el último día para ver este vídeo... haga clic para verlo");
-    </script>
-  </div>
-</div>
+<!-- Meta Pixel Code -->
+<script type="rocketlazyloadscript">
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '577899604917840');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=577899604917840&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
 
+<!-- Meta Pixel Code -->
+<script type="rocketlazyloadscript">
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '523512663810543');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=523512663810543&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- /end HFCM by 99 Robots -->
+<!-- HFCM by 99 Robots - Snippet # 4: UTM -->
+<script type="rocketlazyloadscript">
+function storeUTMParameters() {
+    const urlParams = new URLSearchParams(window.location.search);
+    const utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'chave'];
+    utmParams.forEach(param => {
+        const value = urlParams.get(param);
+        if (value) {
+            localStorage.setItem(param, value);
+        }
+    });
+}
 
+function addUTMParametersToURL(url) {
+    let newUrl = new URL(url);
+    const utmParams = ['utm_source', 'utm_medium', 'utm_campaign', 'utm_term', 'utm_content', 'chave'];
+    utmParams.forEach(param => {
+        const value = localStorage.getItem(param);
+        if (value) {
+            newUrl.searchParams.set(param, value);
+        }
+    });
+    return newUrl.toString();
+}</script>
 
+<script type="rocketlazyloadscript">
+document.addEventListener('DOMContentLoaded', function() {
+    storeUTMParameters(); // Armazena os parâmetros UTM quando a página carrega
+});
+</script>
 
-<link rel="preload" href="https://scripts.converteai.net/80d0b89d-7901-4c62-bf15-807e2dab2483/ab-test/671d73522fad00000b862724/player.js" as="script">
-
-<link rel="preload" href="https://scripts.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
-
-<link rel="preload" href="https://images.converteai.net/80d0b89d-7901-4c62-bf15-807e2dab2483/players/671d73522fad00000b862724/thumbnail.jpg" as="image">
-
-
+<!-- /end HFCM by 99 Robots -->
+<!-- HFCM by 99 Robots - Snippet # 6: Vturb Velocidade -->
+<link rel="preload" href="https://scripts.converteai.net/8ac88e27-5706-492e-9bd5-175b98d538d6/players/666240f18ab0ad000b28f6aa/player.js" as="script">
+<link rel="preload" href="https://cdn.converteai.net/lib/js/smartplayer/v1/smartplayer.min.js" as="script">
+<link rel="preload" href="https://images.converteai.net/8ac88e27-5706-492e-9bd5-175b98d538d6/players/666240f18ab0ad000b28f6aa/thumbnail.jpg" as="image">
+<link rel="preload" href="https://cdn.converteai.net/8ac88e27-5706-492e-9bd5-175b98d538d6/66623f0fb271df000b18a796/main.m3u8" as="fetch">
 <link rel="dns-prefetch" href="https://cdn.converteai.net">
 <link rel="dns-prefetch" href="https://scripts.converteai.net">
 <link rel="dns-prefetch" href="https://images.converteai.net">
 <link rel="dns-prefetch" href="https://api.vturb.com.br">
-  
-   
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://salud360ahora.site/">
-    <meta property="og:title" content="Conteúdo Exclusivo">
-    <meta property="og:description" content="Conteúdo Exclusivo">
-    <meta property="og:image" content="https://img.imageboss.me/atm/cdn/format:auto/u/umsGbYu2QNOfeAn5fEqSwCDI4VE3/l/rBhIAv7621085.png">
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Conteúdo Exclusivo">
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&family=Dosis:wght@200;300;400;500;600;700;800&family=Oswald:wght@200;300;400;500;600;700&family=Signika:wght@300;400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/sas-com.css">
+<!-- /end HFCM by 99 Robots -->
+<!-- HFCM by 99 Robots - Snippet # 8: Utmify - Script -->
+<script type="rocketlazyloadscript">
+  window.pixelId = "664a2d448de28b6466313694";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
+</script>
 
-  <!-- Título da Página -->
-  <title>¡Míralo ahora!</title>
+<script type="rocketlazyloadscript" data-minify="1"
+  data-rocket-src="https://homemvigor.online/wp-content/cache/min/1/scripts/utms/latest.js?ver=1730435052"
+  async
+  defer></script>
 
-  <style type="text/css">
-    header {
+<!-- /end HFCM by 99 Robots -->
+<!-- HFCM by 99 Robots - Snippet # 9: Checkout Com Pressel -->
+<script type="rocketlazyloadscript">
+function redirectToCheckout() {
+    const checkoutUrl = addUTMParametersToURL('https://homemvigor.online/sf/?sfunnel=88');
+    window.location.href = checkoutUrl; // Redireciona para o checkout com os UTM
+}
+</script>
+<!-- /end HFCM by 99 Robots -->
+<!-- HFCM by 99 Robots - Snippet # 12: Pixel R01 -->
+<!-- Meta Pixel Code -->
+<script type="rocketlazyloadscript">
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '671878837303568');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=671878837303568&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- /end HFCM by 99 Robots -->
+<!-- HFCM by 99 Robots - Snippet # 21: Pixel Escala -->
+<!-- Meta Pixel Code -->
+<script type="rocketlazyloadscript">
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1238278944021227');
+fbq('track', 'PageView');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1238278944021227&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+<!-- /end HFCM by 99 Robots -->
+<!-- HFCM by 99 Robots - Snippet # 23: RedTrack - LPView -->
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript" data-rocket-src="https://saude.trackhomemvigor.online/track.js"></script>
+
+
+<!-- /end HFCM by 99 Robots -->
+<script type="rocketlazyloadscript">(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-NDGCJ49');</script>
+
+<meta name="generator" content="Elementor 3.23.4; features: e_optimized_css_loading, e_font_icon_svg, additional_custom_breakpoints, e_optimized_control_loading, e_lazyload; settings: css_print_method-external, google_font-enabled, font_display-swap">
+			<style>
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload),
+				.e-con.e-parent:nth-of-type(n+4):not(.e-lazyloaded):not(.e-no-lazyload) * {
+					background-image: none !important;
+				}
+				@media screen and (max-height: 1024px) {
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+3):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+				@media screen and (max-height: 640px) {
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload),
+					.e-con.e-parent:nth-of-type(n+2):not(.e-lazyloaded):not(.e-no-lazyload) * {
+						background-image: none !important;
+					}
+				}
+			</style>
+						<meta name="theme-color" content="#FFF9F9">
+			<link rel="icon" href="https://homemvigor.online/wp-content/uploads/2024/05/favicon-gm-150x150.png" sizes="32x32" />
+<link rel="icon" href="https://homemvigor.online/wp-content/uploads/2024/05/favicon-gm.png" sizes="192x192" />
+<link rel="apple-touch-icon" href="https://homemvigor.online/wp-content/uploads/2024/05/favicon-gm.png" />
+<meta name="msapplication-TileImage" content="https://homemvigor.online/wp-content/uploads/2024/05/favicon-gm.png" />
+<noscript><style id="rocket-lazyload-nojs-css">.rll-youtube-player, [data-lazy-src]{display:none !important;}</style></noscript>	<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" /></head>
+<body data-rsssl=1 class="page-template-default page page-id-343 wp-custom-logo elementor-default elementor-template-canvas elementor-kit-5 elementor-page elementor-page-343">
+			<div data-elementor-type="wp-page" data-elementor-id="343" class="elementor elementor-343">
+				<div class="elementor-element elementor-element-9621255 e-con-full e-flex e-con e-parent" data-id="9621255" data-element_type="container">
+		<div class="elementor-element elementor-element-25e7daa e-con-full e-flex e-con e-child" data-id="25e7daa" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+				<div class="elementor-element elementor-element-1c0081e elementor-widget elementor-widget-html" data-id="1c0081e" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<html>
+<head>
+  <style>
+    .text {
+      text-align: center;
+      font-family: 'Poppins', sans-serif;
+      font-size: 16px;
+      font-weight: bold;
       color: white;
-      background-image: rgb(8, 0, 45);
-      background-color: rgb(255, 255, 255);
-      background-position: center;
-      background-size: cover;
-      background-attachment: fixed;
-      background-blend-mode: darken;
-    }
+        }
   </style>
-  
 </head>
-
-<body>
-  <header class="py-4">
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8 text-center">
-          
-          <!-- VSL -->
-         <script type="text/javascript" id="scr_671d73522fad00000b862724"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/80d0b89d-7901-4c62-bf15-807e2dab2483/ab-test/671d73522fad00000b862724/player.js", s.async=!0, document.head.appendChild(s); </script> <style> .elementor-element:has(#smartplayer) { width: 100%; } </style>
-         
-          
-          
-          <link rel="prerender" href="https://pay.hotmart.com/D94035991G?checkoutMode=10"/>
-
-          <!-- Botão 1 -->
-            <div id="cta1" class="mt-4 d-none">
-              <a href="https://pay.hotmart.com/123456789?checkoutMode=10" class="btn btn-success btn-lg btn-block" style="text-decoration: none;">
-              <br>
-              <span class="span-btn"> h </span>   
-              <br>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </header>
-
-  <section class="comments py-4">
-
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
-    <script>$.get("https://ipinfo.io/json", function (response) {
-        $("#address").html(response.city);
-      }, "jsonp");
-    </script>
-      
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="fb-comments" style="margin-top: 5px;">
-            <div class="fb-comments-header">
-              <span>21 de 174 comentarios</span>
-            </div>
-            <div class="fb-comments-wrapper" id="2">
-              <table class="fb-comments-comment">
-                <tbody>
-                  <tr>
-                    <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-h6.jpeg"></td>
-                    <td>
-                      <font class="fb-comments-comment-name">
-                        <name>Santiago Gómez</name>
-                      </font>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-text">Gracias a este video, hoy me despertó de una manera tan intensa que no pude resistirme... Primero deslizó su mano lentamente por dentro de mis bragas, luego, con una mirada penetrante, me la llevó a la boca, dejándola completamente mojada. Cuando pensaba que no podía más, me dijo al oído: "Haz que me lo vuelvas a mojar todo otra vez..." No tengo palabras para describir lo explosivo que ha sido este momento gracias a tu video. ¡Es pura magia, infinitas gracias!</td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-actions">
-                      <like>Curtir</like>
-                      ·
-                      <reply>Responder</reply>
-                      ·
-                      <likes>8</likes>
-
-                      <date>4 min</date>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="fb-comments-wrapper" id="3">
-              <table class="fb-comments-comment">
-                <tbody>
-                  <tr>
-                    <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-h1.jpeg"></td>
-                    <td>
-                      <font class="fb-comments-comment-name">
-                        <name>Andrés Torres</name>
-                      </font>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-text">Aquí en <span id="address" style="color:#000000;">Salvador</span> sólo hablan de este truco,</td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-actions">
-                      <like>Curtir</like>
-                      ·
-                      <reply>Responder</reply>
-                      ·
-                      <likes>9</likes>
-
-                      <date>5 min</date>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="fb-comments-wrapper" id="4">
-              <table class="fb-comments-comment">
-                <tbody>
-                  <tr>
-                    <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-h2.jpeg"></td>
-                    <td>
-                      <font class="fb-comments-comment-name">
-                        <name>Juan Carlos Martínez</name>
-                      </font>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-text">¡No lo podía creer! Después de aplicar lo que vi en el video, mi novia quedó completamente sorprendida. Por primera vez, conseguí darle varios orgasmos uno tras otro, sin descanso. La forma en que reaccionaba... ¡era algo que nunca había experimentado antes! Si quieres hacer que tu chica te vea como el mejor amante de su vida, tienes que ver este video completo. ¡Créeme, cambiará tu relación para siempre!</td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-actions">
-                      <like>Curtir</like>
-                      ·
-                      <reply>Responder</reply>
-                      ·
-                      <likes>11</likes>
-
-                      <date>12 min</date>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="fb-comments-wrapper" id="5">
-              <table class="fb-comments-comment">
-                <tbody>
-                  <tr>
-                    <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-h3.jpeg"></td>
-                    <td>
-                      <font class="fb-comments-comment-name">
-                        <name>Carlos Castro</name>
-                      </font>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-text">Anoche, nunca había visto algo así. Ella no paraba de moverse, estremecida de placer, mientras yo, sin esfuerzo, la llevaba al límite una y otra vez. Era como si su cuerpo fuera una fuente inagotable de orgasmos. ¿Quieres saber cómo lo logré? No te pierdas ni un segundo de este video y descubre el secreto para hacer que cualquier mujer pierda el control en la cama.</td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-actions">
-                      <like>Curtir</like>
-                      ·
-                      <reply>Responder</reply>
-                      ·
-                      <likes>15</likes>
-
-                      <date>19 min</date>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="fb-comments-wrapper" id="6">
-              <table class="fb-comments-comment">
-                <tbody>
-                  <tr>
-                    <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-h4.jpeg"></td>
-                    <td>
-                      <font class="fb-comments-comment-name">
-                        <name>Luis Fernando Herrera</name>
-                      </font>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-text">Ayer fue increíble. Nunca había escuchado a mi chica gemir tan fuerte en mi vida. De hecho, esta mañana me desperté con ella rogando por más, sin poder creer lo que pasó anoche. Y todo lo aprendí viendo este video… Si quieres descubrir cómo hacer que ella experimente múltiples orgasmos seguidos, no puedes perdértelo. </td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-actions">
-                      <like>Curtir</like>
-                      ·
-                      <reply>Responder</reply>
-                      ·
-                      <likes>17</likes>
-
-                      <date>24 min</date>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="fb-comments-wrapper" id="7">
-              <table class="fb-comments-comment">
-                <tbody>
-                  <tr>
-                    <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-h5.jpeg"></td>
-                    <td>
-                      <font class="fb-comments-comment-name">
-                        <name>Diego Ramírez</name>
-                      </font>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-text">¡Ноmbrе! Nо sе quе hау еn еstе sесrеtо пеrо еllа нунса hа тенидо аnаl, ¡аhоrа tоdоs lоs díаs quiеrе dármеlо! ¡Quе соsа!</td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-actions">
-                      <like>Curtir</like>
-                      ·
-                      <reply>Responder</reply>
-                      ·
-                      <likes>18</likes>
-
-                      <date>26 min</date>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="fb-comments-wrapper" id="9">
-              <table class="fb-comments-comment">
-                <tbody>
-                  <tr>
-                    <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-h7.jpeg">
-                    </td>
-                    <td>
-                      <font class="fb-comments-comment-name">
-                        <name>Alejandro López</name>
-                      </font>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-text">¡Qué video tan sensacional! Me alegra haberlo visto hasta el final.</td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-actions">
-                      <like>Curtir</like>
-                      ·
-                      <reply>Responder</reply>
-                      ·
-                      <likes>22</likes>
-
-                      <date>39 min</date>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <button class="fb-comments-loadmore" onclick="javascript:loadMore();">Ver mais
-              comentários</button>
-            <div style="display:none" id="more">
-              <div class="fb-comments-wrapper">
-                <table class="fb-comments-comment" id="10">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-h8.jpeg">
-                      </td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Carlos Alberto Vargas</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">¡¡¡¡sасudió lаs рiеrnаs durаntе 12 hоrаs sеguidаs, еsо еs mаgiа, у hоу quеríа más!!!!</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>41</likes>
-
-                        <date>1 h</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="11">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-m7.jpeg">
-                      </td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Sebastián Díaz</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">que sensación, me ha gustado el video, lo he compartido con todo el mundo....</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>40</likes>
-
-                        <date>1 h</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="12">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-m9.jpeg">
-                      </td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Gabriel Rivas</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Esa fue la solución para mí, gracias</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>47</likes>
-
-                        <date>1 h</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="13">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-m7.jpeg"></td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Esteban Jiménez</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">hоlа, sоу mаrсоs, у vеngо а соntаrоs mi histоriа. mi mujеr аl рrinсiрiо dе lа rеlасión siеmрrе fuе mаrаvillоsа, реrо соn еl tiеmро у dеsрués dе 12 аñоs dе mаtrimоniо, lаs соsаs fuеrоn еmреоrаndо, ареnаs tеníаmоs sехо, у сuаndо lо hасíаmоs еrа unа vеz аl mеs соmо muсhо. уо lа vеrdаd еs quе реnsаbа quе еrа роr еl еstrés, реrо nо еrа аsí. сuаndо vоlví tеmрrаnо, mе lа еnсоntré а сuаtrо раtаs tеniеndо sехо аnаl, соsа quе mе dijо quе lе dоlíа. Vоlviеndо аntеs dе lа саrniсеríа, lа рillé соn оtrо tíо, lа еnсоntré а сuаtrо раtаs tеniеndо sехо аnаl, соsа quе mе dijо quе lе dоlíа. finаlmеntе, nоs sераrаmоs у grасiаs а еstе vídео, еnсоntré аl аmоr dе mi vidа, quе hоу vivе mis mеjоrеs díаs, у сrео quе еllа tаmbién vivе sus mеjоrеs nосhеs. ¡grасiаs!</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>50</likes>
-
-                        <date>1 h</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper">
-                <table class="fb-comments-comment" id="14">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-m9.jpeg">
-                      </td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Javier Rojas</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Me ha encantado el video, me gusta que haya una pequeña sorpresa para los que lo vean hasta el final</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>66</likes>
-
-                        <date>1 h</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
-  
-<!-- Botão 2 -->
-            <div id="cta2" class="mt-4 d-none">
-              <a href="https://pay.hotmart.com/123456789?checkoutMode=10" class="btn btn-success btn-lg btn-block" style="text-decoration: none;">
-              <br>
-              <span class="span-btn">COMPRAR AGORA!</span>
-              <br>
-              </a>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-  <footer class="bg-white py-3 text-center">
-
-    <span style="color:#6C757D">Copyright 2024 – caiu no cloaker kkk ®
-        <br>Todos os direitos reservados.</span><br><br>
-
-      <div class="text-secondary"><a href=" " class="text-secondary">Termos de Uso</a> – <a href=" "
-          class="text-secondary">Políticas de Privacidade</a></div><br>
-
-<script>
-    let prefix = ["https://payment.hotmart.com", "https://pay.hotmart.com", "https://go.hotmart.com"];
-
-function getParams() {
-    let t = "",
-        e = window.top.location.href,
-        r = new URL(e);
-    if (null != r) {
-        let a = r.searchParams.get("utm_source"),
-            n = r.searchParams.get("utm_medium"),
-            o = r.searchParams.get("utm_campaign"),
-            m = r.searchParams.get("utm_term"),
-            c = r.searchParams.get("utm_content"); - 1 !== e.indexOf("?") && (t = `&sck=${a}|${n}|${o}|${m}|${c}`), console.log(t)
-    }
-    return t
-}! function() {
-    var t = new URLSearchParams(window.location.search);
-    t.toString() && document.querySelectorAll("a").forEach(function(e) {
-        for (let r = 0; r < prefix.length; r++) - 1 !== e.href.indexOf(prefix[r]) && (-1 === e.href.indexOf("?") ? e.href += "?" + t.toString() + getParams() : e.href += "&" + t.toString() + getParams())
-    })
-}();
-</script>
-
-        <script type="text/javascript">
-      var back_redirect_back_link = "" + location.search;
-      history.pushState({}, "", location.href);
-      history.pushState({}, "", location.href);
-
-      window.addEventListener(
-        "popstate",
-        function (event) {
-          if (event.state) {
-            setTimeout(function () {
-              location.href = back_redirect_back_link;
-            }, 1);
-          }
-        },
-        false
-      );
-    </script>
-          
-  </footer>
-
-      <script type="text/javascript">
-      setTimeout(() => {document.getElementById("cta1").classList.remove("d-none"); document.getElementById("cta2").classList.remove("d-none")}, 12000000); // temporização da Call to Action (em milissegundos)
-    </script>
-
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js"
-    integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js"
-    integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy"
-    crossorigin="anonymous"></script>
-  <script src="./assets/js/sas-com.js"></script>
-
-<script>
-  // ALTERE O LINK PARA A PÁGINA QUE QUISER MOSTRAR QUANDO O USUÁRIO TENTAR SAIR
-  const link = 'https://mf.vcbemcomseucorpo.site/backrs/';
-
-  function setBackRedirect(url) {
-    let urlBackRedirect = url;
-    urlBackRedirect = urlBackRedirect =
-      urlBackRedirect.trim() +
-      (urlBackRedirect.indexOf('?') > 0 ? '&' : '?') +
-      document.location.search.replace('?', '').toString();
-
-    history.pushState({}, '', location.href);
-    history.pushState({}, '', location.href);
-    history.pushState({}, '', location.href);
-
-    window.addEventListener('popstate', () => {
-      console.log('onpopstate', urlBackRedirect);
-      setTimeout(() => {
-        location.href = urlBackRedirect;
-      }, 1);
-    });
-  }
-
-  setBackRedirect(link);
-</script>
-
-  
-</body>
+<body data-rsssl=1>
+  <div class="text">
+   <div style="line-height: 1.0;"> Devido ao alto número de acessos, ela ficará disponível somente até: <span style="color: white;"><span id="date"></span></span>
+  </div>
+  <script type="rocketlazyloadscript">
+    const currentDate = new Date();
+    const day = currentDate.getDate().toString().padStart(2, '0');
+    const month = (currentDate.getMonth() + 1).toString().padStart(2, '0');
+    const year = currentDate.getFullYear().toString().substr(-2);
+    document.getElementById('date').innerHTML = `${day}/${month}/${year}`;
+  </script>
+<script>class RocketElementorAnimation{constructor(){this.deviceMode=document.createElement("span"),this.deviceMode.id="elementor-device-mode-wpr",this.deviceMode.setAttribute("class","elementor-screen-only"),document.body.appendChild(this.deviceMode)}_detectAnimations(){let t=getComputedStyle(this.deviceMode,":after").content.replace(/"/g,"");this.animationSettingKeys=this._listAnimationSettingsKeys(t),document.querySelectorAll(".elementor-invisible[data-settings]").forEach(t=>{const e=t.getBoundingClientRect();if(e.bottom>=0&&e.top<=window.innerHeight)try{this._animateElement(t)}catch(t){}})}_animateElement(t){const e=JSON.parse(t.dataset.settings),i=e._animation_delay||e.animation_delay||0,n=e[this.animationSettingKeys.find(t=>e[t])];if("none"===n)return void t.classList.remove("elementor-invisible");t.classList.remove(n),this.currentAnimation&&t.classList.remove(this.currentAnimation),this.currentAnimation=n;let s=setTimeout(()=>{t.classList.remove("elementor-invisible"),t.classList.add("animated",n),this._removeAnimationSettings(t,e)},i);window.addEventListener("rocket-startLoading",function(){clearTimeout(s)})}_listAnimationSettingsKeys(t="mobile"){const e=[""];switch(t){case"mobile":e.unshift("_mobile");case"tablet":e.unshift("_tablet");case"desktop":e.unshift("_desktop")}const i=[];return["animation","_animation"].forEach(t=>{e.forEach(e=>{i.push(t+e)})}),i}_removeAnimationSettings(t,e){this._listAnimationSettingsKeys().forEach(t=>delete e[t]),t.dataset.settings=JSON.stringify(e)}static run(){const t=new RocketElementorAnimation;requestAnimationFrame(t._detectAnimations.bind(t))}}document.addEventListener("DOMContentLoaded",RocketElementorAnimation.run);</script></body>
 </html>
+		</div>
+				</div>
+				</div>
+				</div>
+		<div class="elementor-element elementor-element-79b02d90 e-flex e-con-boxed e-con e-parent" data-id="79b02d90" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-cb8afde elementor-widget elementor-widget-heading" data-id="cb8afde" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.23.0 - 05-08-2024 */
+.elementor-heading-title{padding:0;margin:0;line-height:1}.elementor-widget-heading .elementor-heading-title[class*=elementor-size-]>a{color:inherit;font-size:inherit;line-height:inherit}.elementor-widget-heading .elementor-heading-title.elementor-size-small{font-size:15px}.elementor-widget-heading .elementor-heading-title.elementor-size-medium{font-size:19px}.elementor-widget-heading .elementor-heading-title.elementor-size-large{font-size:29px}.elementor-widget-heading .elementor-heading-title.elementor-size-xl{font-size:39px}.elementor-widget-heading .elementor-heading-title.elementor-size-xxl{font-size:59px}</style><h2 class="elementor-heading-title elementor-size-default">Verifique se o seu som está ligado!</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-3676182 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-html" data-id="3676182" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<script type="text/javascript" id="scr_671d73522fad00000b862724"> var s=document.createElement("script"); s.src="https://scripts.converteai.net/80d0b89d-7901-4c62-bf15-807e2dab2483/ab-test/671d73522fad00000b862724/player.js", s.async=!0, document.head.appendChild(s); </script> <style> .elementor-element:has(#smartplayer) { width: 100%; } </style>
+
+<style>.esconder { display: none }</style>
+
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+document.addEventListener("DOMContentLoaded", function() {
+/* ALTERE O VALOR 10 PARA OS SEGUNDOS EM QUE AS SEÇÕES VÃO APARECER */
+var SECONDS_TO_DISPLAY = 1275;
+var CLASS_TO_DISPLAY = ".esconder";
+/* DAQUI PARA BAIXO NAO PRECISA ALTERAR */
+var attempts = 0;
+var elsHiddenList = [];
+var elsDisplayed = false;
+var elsHidden = document.querySelectorAll(CLASS_TO_DISPLAY);
+var alreadyDisplayedKey = "alreadyElsDisplayed" + SECONDS_TO_DISPLAY;
+var alreadyElsDisplayed = null;
+try {
+    alreadyElsDisplayed = localStorage.getItem(alreadyDisplayedKey);
+} catch(e) {
+    console.warn('Failed to read data from localStorage: ', e);
+}
+setTimeout(function () { elsHiddenList = Array.prototype.slice.call(elsHidden); }, 0);
+var showHiddenElements = function () {
+elsDisplayed = true;
+elsHiddenList.forEach((e) => e.style.display = "block");
+try {
+  localStorage.setItem(alreadyDisplayedKey, true);
+} catch (e) {
+  console.warn('Failed to save data in localStorage: ', e);
+}
+}
+var startWatchVideoProgress = function () {
+if (typeof smartplayer === 'undefined' || !(smartplayer.instances && smartplayer.instances.length)) {
+if (attempts >= 10) return;
+attempts += 1;
+return setTimeout(function () { startWatchVideoProgress() }, 1000);
+}
+smartplayer.instances[0].on('timeupdate', () => {
+if (elsDisplayed || smartplayer.instances[0].smartAutoPlay) return;
+if (smartplayer.instances[0].video.currentTime < SECONDS_TO_DISPLAY) return;
+showHiddenElements();
+})
+}
+if (alreadyElsDisplayed === 'true') {
+setTimeout(function () { showHiddenElements(); }, 100);
+} else {
+startWatchVideoProgress()
+}
+});
+</script>		</div>
+				</div>
+				<div class="elementor-element elementor-element-c2ea7b4 elementor-widget-mobile__width-inherit elementor-widget elementor-widget-html" data-id="c2ea7b4" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://homemvigor.online/wp-content/cache/min/1/ajax/libs/jquery/3.2.1/jquery.min.js?ver=1730435052"></script>
+<script type="rocketlazyloadscript" data-rocket-type="text/javascript">
+    // Define as URLs para redirecionamento após a ação de voltar
+    var earlyBackRedirectLink = 'https://tudonoticia.site/growth-matrix-segredo-sujos-dos-atores/'; // URL se o usuário tentar voltar antes de 20 minutos
+    var laterBackRedirectLink = 'https://tudonoticia.site/ultima-chance/'; // URL se o usuário tentar voltar após 20 minutos
+
+    // Adiciona dois estados ao histórico para interceptar o botão de voltar
+    history.pushState({}, "", location.href);
+    history.pushState({}, "", location.href);
+
+    // Armazena o tempo no momento do carregamento da página
+    var pageLoadTime = Date.now();
+
+    // Manipula a mudança de estado quando o usuário tenta navegar para trás
+    window.onpopstate = function () {
+        setTimeout(function () {
+            var currentTime = Date.now();
+            var timeElapsed = currentTime - pageLoadTime;
+
+            if (timeElapsed < 20 * 60 * 1000) { // 20 minutos em milissegundos
+                location.href = earlyBackRedirectLink + location.search; // Redireciona para a primeira página
+            } else {
+                location.href = laterBackRedirectLink + location.search; // Redireciona para a segunda página
+            }
+        }, 1);
+    };
+</script>
+
+
+		</div>
+				</div>
+		<div class="elementor-element elementor-element-b00e4c6 esconder e-flex e-con-boxed elementor-invisible e-con e-child" data-id="b00e4c6" data-element_type="container" data-settings="{&quot;animation&quot;:&quot;fadeIn&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-fd8ab91 e-flex e-con-boxed e-con e-child" data-id="fd8ab91" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-b9a39fe elementor-widget elementor-widget-heading" data-id="b9a39fe" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">VAGAS RESTANTES:</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-20cf4ec elementor-widget elementor-widget-counter" data-id="20cf4ec" data-element_type="widget" data-widget_type="counter.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.23.0 - 05-08-2024 */
+.elementor-counter{display:flex;justify-content:center;align-items:stretch;flex-direction:column-reverse}.elementor-counter .elementor-counter-number{flex-grow:var(--counter-number-grow,0)}.elementor-counter .elementor-counter-number-wrapper{flex:1;display:flex;font-size:69px;font-weight:600;line-height:1;text-align:center}.elementor-counter .elementor-counter-number-prefix{text-align:end;flex-grow:var(--counter-prefix-grow,1);white-space:pre-wrap}.elementor-counter .elementor-counter-number-suffix{text-align:start;flex-grow:var(--counter-suffix-grow,1);white-space:pre-wrap}.elementor-counter .elementor-counter-title{flex:1;display:flex;justify-content:center;align-items:center;margin:0;padding:0;font-size:19px;font-weight:400;line-height:2.5}</style>		<div class="elementor-counter">
+						<div class="elementor-counter-number-wrapper">
+				<span class="elementor-counter-number-prefix"></span>
+				<span class="elementor-counter-number" data-duration="250000" data-to-value="3" data-from-value="245" data-delimiter=",">245</span>
+				<span class="elementor-counter-number-suffix"></span>
+			</div>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-737d95d elementor-widget elementor-widget-heading" data-id="737d95d" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">POR APENAS:</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-48f0743 elementor-widget elementor-widget-heading" data-id="48f0743" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">R$147,00</h2>		</div>
+				</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-0f13b59 smartplayer-click-event elementor-widget elementor-widget-html" data-id="0f13b59" data-element_type="widget" data-widget_type="html.default">
+				<div class="elementor-widget-container">
+			<button onclick="redirectToCheckout()">Garantir Minha Vaga!</button>		</div>
+				</div>
+				<div class="elementor-element elementor-element-e4afd2a smartplayer-scroll-event elementor-widget elementor-widget-heading" data-id="e4afd2a" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">(180 Dias de Garantia)</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-0eb57a2 elementor-widget elementor-widget-image" data-id="0eb57a2" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.23.0 - 05-08-2024 */
+.elementor-widget-image{text-align:center}.elementor-widget-image a{display:inline-block}.elementor-widget-image a img[src$=".svg"]{width:48px}.elementor-widget-image img{vertical-align:middle;display:inline-block}</style>										<img decoding="async" width="300" height="73" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20300%2073'%3E%3C/svg%3E" class="attachment-medium size-medium wp-image-485" alt="" data-lazy-srcset="https://homemvigor.online/wp-content/uploads/2024/06/compra-segura-PAYT-300x73.png 300w, https://homemvigor.online/wp-content/uploads/2024/06/compra-segura-PAYT.png 756w" data-lazy-sizes="(max-width: 300px) 100vw, 300px" data-lazy-src="https://homemvigor.online/wp-content/uploads/2024/06/compra-segura-PAYT-300x73.png" /><noscript><img decoding="async" width="300" height="73" src="https://homemvigor.online/wp-content/uploads/2024/06/compra-segura-PAYT-300x73.png" class="attachment-medium size-medium wp-image-485" alt="" srcset="https://homemvigor.online/wp-content/uploads/2024/06/compra-segura-PAYT-300x73.png 300w, https://homemvigor.online/wp-content/uploads/2024/06/compra-segura-PAYT.png 756w" sizes="(max-width: 300px) 100vw, 300px" /></noscript>													</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-3819b3c e-flex e-con-boxed e-con e-child" data-id="3819b3c" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-e941ab6 elementor-widget elementor-widget-heading" data-id="e941ab6" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Estamos na mídia</h2>		</div>
+				</div>
+		<div class="elementor-element elementor-element-1421898 e-flex e-con-boxed e-con e-child" data-id="1421898" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-1da77fc elementor-widget-mobile__width-initial elementor-widget elementor-widget-image" data-id="1da77fc" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="118" height="18" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20118%2018'%3E%3C/svg%3E" class="attachment-large size-large wp-image-65" alt="" data-lazy-src="https://homemvigor.online/wp-content/uploads/2024/05/globo.png" /><noscript><img decoding="async" width="118" height="18" src="https://homemvigor.online/wp-content/uploads/2024/05/globo.png" class="attachment-large size-large wp-image-65" alt="" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-555923c elementor-widget-mobile__width-initial elementor-widget elementor-widget-image" data-id="555923c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="91" height="42" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2091%2042'%3E%3C/svg%3E" class="attachment-large size-large wp-image-67" alt="" data-lazy-src="https://homemvigor.online/wp-content/uploads/2024/05/terra.png" /><noscript><img decoding="async" width="91" height="42" src="https://homemvigor.online/wp-content/uploads/2024/05/terra.png" class="attachment-large size-large wp-image-67" alt="" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-4aa197c elementor-widget-mobile__width-initial elementor-widget elementor-widget-image" data-id="4aa197c" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="134" height="29" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20134%2029'%3E%3C/svg%3E" class="attachment-large size-large wp-image-69" alt="" data-lazy-src="https://homemvigor.online/wp-content/uploads/2024/05/estadao.png" /><noscript><img loading="lazy" decoding="async" width="134" height="29" src="https://homemvigor.online/wp-content/uploads/2024/05/estadao.png" class="attachment-large size-large wp-image-69" alt="" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-11b6237 elementor-widget-mobile__width-initial elementor-widget elementor-widget-image" data-id="11b6237" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="97" height="34" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%2097%2034'%3E%3C/svg%3E" class="attachment-large size-large wp-image-68" alt="" data-lazy-src="https://homemvigor.online/wp-content/uploads/2024/05/valor.png" /><noscript><img loading="lazy" decoding="async" width="97" height="34" src="https://homemvigor.online/wp-content/uploads/2024/05/valor.png" class="attachment-large size-large wp-image-68" alt="" /></noscript>													</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-7f583b1f e-flex e-con-boxed e-con e-parent" data-id="7f583b1f" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-473b402a elementor-widget elementor-widget-image" data-id="473b402a" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="358" height="398" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20358%20398'%3E%3C/svg%3E" class="attachment-large size-large wp-image-71" alt="" data-lazy-srcset="https://homemvigor.online/wp-content/uploads/2024/05/ryan-min.png 358w, https://homemvigor.online/wp-content/uploads/2024/05/ryan-min-270x300.png 270w" data-lazy-sizes="(max-width: 358px) 100vw, 358px" data-lazy-src="https://homemvigor.online/wp-content/uploads/2024/05/ryan-min.png" /><noscript><img loading="lazy" decoding="async" width="358" height="398" src="https://homemvigor.online/wp-content/uploads/2024/05/ryan-min.png" class="attachment-large size-large wp-image-71" alt="" srcset="https://homemvigor.online/wp-content/uploads/2024/05/ryan-min.png 358w, https://homemvigor.online/wp-content/uploads/2024/05/ryan-min-270x300.png 270w" sizes="(max-width: 358px) 100vw, 358px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-4107c6ed elementor-widget elementor-widget-heading" data-id="4107c6ed" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Ryan McLane
+</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-312dc54b elementor-widget elementor-widget-text-editor" data-id="312dc54b" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.23.0 - 05-08-2024 */
+.elementor-widget-text-editor.elementor-drop-cap-view-stacked .elementor-drop-cap{background-color:#69727d;color:#fff}.elementor-widget-text-editor.elementor-drop-cap-view-framed .elementor-drop-cap{color:#69727d;border:3px solid;background-color:transparent}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap{margin-top:8px}.elementor-widget-text-editor:not(.elementor-drop-cap-view-default) .elementor-drop-cap-letter{width:1em;height:1em}.elementor-widget-text-editor .elementor-drop-cap{float:left;text-align:center;line-height:1;font-size:50px}.elementor-widget-text-editor .elementor-drop-cap-letter{display:inline-block}</style>				<p>Ryan McLane não é apenas um ator talentoso, mas também diretor e produtor na indústria pornô. Ele dirigiu e produziu vários filmes adultos, muitas vezes sendo a estrela em alguns deles. Ele foi reconhecido por seus esforços de direção ao vencer o prêmio AVN de Melhor Diretor &#8211; Featurette em 2020 pelo filme &#8220;Ela não é um Anjo&#8221;. Além de seu trabalho na indústria, Ryan McLane fez aparições em filmes convencionais como “Zack and Miri Make a Porno” e “The Lighthouse”.</p>						</div>
+				</div>
+		<div class="elementor-element elementor-element-67b0d0c1 e-flex e-con-boxed e-con e-child" data-id="67b0d0c1" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-4c4edac9 elementor-widget-mobile__width-initial elementor-widget elementor-widget-image" data-id="4c4edac9" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="225" height="225" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20225%20225'%3E%3C/svg%3E" class="attachment-large size-large wp-image-72" alt="" data-lazy-srcset="https://homemvigor.online/wp-content/uploads/2024/05/download.png 225w, https://homemvigor.online/wp-content/uploads/2024/05/download-150x150.png 150w" data-lazy-sizes="(max-width: 225px) 100vw, 225px" data-lazy-src="https://homemvigor.online/wp-content/uploads/2024/05/download.png" /><noscript><img loading="lazy" decoding="async" width="225" height="225" src="https://homemvigor.online/wp-content/uploads/2024/05/download.png" class="attachment-large size-large wp-image-72" alt="" srcset="https://homemvigor.online/wp-content/uploads/2024/05/download.png 225w, https://homemvigor.online/wp-content/uploads/2024/05/download-150x150.png 150w" sizes="(max-width: 225px) 100vw, 225px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-7816a350 elementor-widget-mobile__width-initial elementor-widget elementor-widget-image" data-id="7816a350" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="800" height="800" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20800%20800'%3E%3C/svg%3E" class="attachment-large size-large wp-image-73" alt="" data-lazy-srcset="https://homemvigor.online/wp-content/uploads/2024/05/icone-do-logotipo-de-xvideos-e-um-web-site-partilha-e-vista-pornografico-video-desde-dezembro-o-mais-visitado-acordo-com-142175224.webp 800w, https://homemvigor.online/wp-content/uploads/2024/05/icone-do-logotipo-de-xvideos-e-um-web-site-partilha-e-vista-pornografico-video-desde-dezembro-o-mais-visitado-acordo-com-142175224-300x300.webp 300w, https://homemvigor.online/wp-content/uploads/2024/05/icone-do-logotipo-de-xvideos-e-um-web-site-partilha-e-vista-pornografico-video-desde-dezembro-o-mais-visitado-acordo-com-142175224-150x150.webp 150w, https://homemvigor.online/wp-content/uploads/2024/05/icone-do-logotipo-de-xvideos-e-um-web-site-partilha-e-vista-pornografico-video-desde-dezembro-o-mais-visitado-acordo-com-142175224-768x768.webp 768w" data-lazy-sizes="(max-width: 800px) 100vw, 800px" data-lazy-src="https://homemvigor.online/wp-content/uploads/2024/05/icone-do-logotipo-de-xvideos-e-um-web-site-partilha-e-vista-pornografico-video-desde-dezembro-o-mais-visitado-acordo-com-142175224.webp" /><noscript><img loading="lazy" decoding="async" width="800" height="800" src="https://homemvigor.online/wp-content/uploads/2024/05/icone-do-logotipo-de-xvideos-e-um-web-site-partilha-e-vista-pornografico-video-desde-dezembro-o-mais-visitado-acordo-com-142175224.webp" class="attachment-large size-large wp-image-73" alt="" srcset="https://homemvigor.online/wp-content/uploads/2024/05/icone-do-logotipo-de-xvideos-e-um-web-site-partilha-e-vista-pornografico-video-desde-dezembro-o-mais-visitado-acordo-com-142175224.webp 800w, https://homemvigor.online/wp-content/uploads/2024/05/icone-do-logotipo-de-xvideos-e-um-web-site-partilha-e-vista-pornografico-video-desde-dezembro-o-mais-visitado-acordo-com-142175224-300x300.webp 300w, https://homemvigor.online/wp-content/uploads/2024/05/icone-do-logotipo-de-xvideos-e-um-web-site-partilha-e-vista-pornografico-video-desde-dezembro-o-mais-visitado-acordo-com-142175224-150x150.webp 150w, https://homemvigor.online/wp-content/uploads/2024/05/icone-do-logotipo-de-xvideos-e-um-web-site-partilha-e-vista-pornografico-video-desde-dezembro-o-mais-visitado-acordo-com-142175224-768x768.webp 768w" sizes="(max-width: 800px) 100vw, 800px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-44b8f0f5 elementor-widget-mobile__width-initial elementor-widget elementor-widget-image" data-id="44b8f0f5" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="225" height="225" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20225%20225'%3E%3C/svg%3E" class="attachment-large size-large wp-image-74" alt="" data-lazy-srcset="https://homemvigor.online/wp-content/uploads/2024/05/images.png 225w, https://homemvigor.online/wp-content/uploads/2024/05/images-150x150.png 150w" data-lazy-sizes="(max-width: 225px) 100vw, 225px" data-lazy-src="https://homemvigor.online/wp-content/uploads/2024/05/images.png" /><noscript><img loading="lazy" decoding="async" width="225" height="225" src="https://homemvigor.online/wp-content/uploads/2024/05/images.png" class="attachment-large size-large wp-image-74" alt="" srcset="https://homemvigor.online/wp-content/uploads/2024/05/images.png 225w, https://homemvigor.online/wp-content/uploads/2024/05/images-150x150.png 150w" sizes="(max-width: 225px) 100vw, 225px" /></noscript>													</div>
+				</div>
+					</div>
+				</div>
+					</div>
+				</div>
+		<div class="elementor-element elementor-element-150fdd2c e-flex e-con-boxed e-con e-parent" data-id="150fdd2c" data-element_type="container" data-settings="{&quot;background_background&quot;:&quot;classic&quot;}">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-d21b2f6 e-flex e-con-boxed e-con e-child" data-id="d21b2f6" data-element_type="container">
+					<div class="e-con-inner">
+		<div class="elementor-element elementor-element-ed27e4f e-flex e-con-boxed e-con e-child" data-id="ed27e4f" data-element_type="container">
+					<div class="e-con-inner">
+				<div class="elementor-element elementor-element-3a397a7 elementor-widget-mobile__width-initial elementor-widget elementor-widget-heading" data-id="3a397a7" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Política de Privacidade</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-67778ed elementor-widget-mobile__width-initial elementor-widget elementor-widget-heading" data-id="67778ed" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Termos De Uso</h2>		</div>
+				</div>
+				<div class="elementor-element elementor-element-7203528 elementor-widget-mobile__width-auto elementor-widget elementor-widget-heading" data-id="7203528" data-element_type="widget" data-widget_type="heading.default">
+				<div class="elementor-widget-container">
+			<h2 class="elementor-heading-title elementor-size-default">Contato</h2>		</div>
+				</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-e158ea6 elementor-widget elementor-widget-image" data-id="e158ea6" data-element_type="widget" data-widget_type="image.default">
+				<div class="elementor-widget-container">
+													<img decoding="async" width="711" height="200" src="data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20711%20200'%3E%3C/svg%3E" class="attachment-large size-large wp-image-119" alt="" data-lazy-srcset="https://homemvigor.online/wp-content/uploads/2024/05/Logo-grmm.png 711w, https://homemvigor.online/wp-content/uploads/2024/05/Logo-grmm-300x84.png 300w" data-lazy-sizes="(max-width: 711px) 100vw, 711px" data-lazy-src="https://homemvigor.online/wp-content/uploads/2024/05/Logo-grmm.png" /><noscript><img loading="lazy" decoding="async" width="711" height="200" src="https://homemvigor.online/wp-content/uploads/2024/05/Logo-grmm.png" class="attachment-large size-large wp-image-119" alt="" srcset="https://homemvigor.online/wp-content/uploads/2024/05/Logo-grmm.png 711w, https://homemvigor.online/wp-content/uploads/2024/05/Logo-grmm-300x84.png 300w" sizes="(max-width: 711px) 100vw, 711px" /></noscript>													</div>
+				</div>
+				<div class="elementor-element elementor-element-4ec852d5 elementor-widget elementor-widget-text-editor" data-id="4ec852d5" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>GrowthMatrix &#8211; Todos os Direitos Reservados ©</p><p>CNPJ: 38.539.467/0001-87</p>						</div>
+				</div>
+					</div>
+				</div>
+				<div class="elementor-element elementor-element-559e034 elementor-widget-divider--view-line elementor-widget elementor-widget-divider" data-id="559e034" data-element_type="widget" data-widget_type="divider.default">
+				<div class="elementor-widget-container">
+			<style>/*! elementor - v3.23.0 - 05-08-2024 */
+.elementor-widget-divider{--divider-border-style:none;--divider-border-width:1px;--divider-color:#0c0d0e;--divider-icon-size:20px;--divider-element-spacing:10px;--divider-pattern-height:24px;--divider-pattern-size:20px;--divider-pattern-url:none;--divider-pattern-repeat:repeat-x}.elementor-widget-divider .elementor-divider{display:flex}.elementor-widget-divider .elementor-divider__text{font-size:15px;line-height:1;max-width:95%}.elementor-widget-divider .elementor-divider__element{margin:0 var(--divider-element-spacing);flex-shrink:0}.elementor-widget-divider .elementor-icon{font-size:var(--divider-icon-size)}.elementor-widget-divider .elementor-divider-separator{display:flex;margin:0;direction:ltr}.elementor-widget-divider--view-line_icon .elementor-divider-separator,.elementor-widget-divider--view-line_text .elementor-divider-separator{align-items:center}.elementor-widget-divider--view-line_icon .elementor-divider-separator:after,.elementor-widget-divider--view-line_icon .elementor-divider-separator:before,.elementor-widget-divider--view-line_text .elementor-divider-separator:after,.elementor-widget-divider--view-line_text .elementor-divider-separator:before{display:block;content:"";border-block-end:0;flex-grow:1;border-block-start:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--element-align-left .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-left .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-left .elementor-divider__element{margin-left:0}.elementor-widget-divider--element-align-right .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-right .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-right .elementor-divider__element{margin-right:0}.elementor-widget-divider--element-align-start .elementor-divider .elementor-divider-separator>.elementor-divider__svg:first-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-start .elementor-divider-separator:before{content:none}.elementor-widget-divider--element-align-start .elementor-divider__element{margin-inline-start:0}.elementor-widget-divider--element-align-end .elementor-divider .elementor-divider-separator>.elementor-divider__svg:last-of-type{flex-grow:0;flex-shrink:100}.elementor-widget-divider--element-align-end .elementor-divider-separator:after{content:none}.elementor-widget-divider--element-align-end .elementor-divider__element{margin-inline-end:0}.elementor-widget-divider:not(.elementor-widget-divider--view-line_text):not(.elementor-widget-divider--view-line_icon) .elementor-divider-separator{border-block-start:var(--divider-border-width) var(--divider-border-style) var(--divider-color)}.elementor-widget-divider--separator-type-pattern{--divider-border-style:none}.elementor-widget-divider--separator-type-pattern.elementor-widget-divider--view-line .elementor-divider-separator,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:after,.elementor-widget-divider--separator-type-pattern:not(.elementor-widget-divider--view-line) .elementor-divider-separator:before,.elementor-widget-divider--separator-type-pattern:not([class*=elementor-widget-divider--view]) .elementor-divider-separator{width:100%;min-height:var(--divider-pattern-height);-webkit-mask-size:var(--divider-pattern-size) 100%;mask-size:var(--divider-pattern-size) 100%;-webkit-mask-repeat:var(--divider-pattern-repeat);mask-repeat:var(--divider-pattern-repeat);background-color:var(--divider-color);-webkit-mask-image:var(--divider-pattern-url);mask-image:var(--divider-pattern-url)}.elementor-widget-divider--no-spacing{--divider-pattern-size:auto}.elementor-widget-divider--bg-round{--divider-pattern-repeat:round}.rtl .elementor-widget-divider .elementor-divider__text{direction:rtl}.e-con-inner>.elementor-widget-divider,.e-con>.elementor-widget-divider{width:var(--container-widget-width,100%);--flex-grow:var(--container-widget-flex-grow)}</style>		<div class="elementor-divider">
+			<span class="elementor-divider-separator">
+						</span>
+		</div>
+				</div>
+				</div>
+				<div class="elementor-element elementor-element-56d429d elementor-widget elementor-widget-text-editor" data-id="56d429d" data-element_type="widget" data-widget_type="text-editor.default">
+				<div class="elementor-widget-container">
+							<p>Esse site não é afiliado ao Facebook ou qualquer entidade do Facebook. Depois que você sair do Facebook, a responsabilidade não é deles e sim do nosso site. Fazemos todos os esforços para indicar claramente e mostrar todos as provas reais do produto e usamos resultados reais. Nós não vendemos seus e-mail ou qualquer informação para terceiros. Jamais fazemos nenhum tipo de spam. Se você tiver alguma dúvida, sinta-se à vontade para usar o link de contato e falar conosco em horário comercial de Segunda a Sextas das 09h00 às 18h00. Lemos e respondemos todas as mensagens por ordem de chegada.</p>						</div>
+				</div>
+					</div>
+				</div>
+				</div>
+		<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-NDGCJ49"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+			<script type="rocketlazyloadscript" data-rocket-type='text/javascript'>
+				const lazyloadRunObserver = () => {
+					const lazyloadBackgrounds = document.querySelectorAll( `.e-con.e-parent:not(.e-lazyloaded)` );
+					const lazyloadBackgroundObserver = new IntersectionObserver( ( entries ) => {
+						entries.forEach( ( entry ) => {
+							if ( entry.isIntersecting ) {
+								let lazyloadBackground = entry.target;
+								if( lazyloadBackground ) {
+									lazyloadBackground.classList.add( 'e-lazyloaded' );
+								}
+								lazyloadBackgroundObserver.unobserve( entry.target );
+							}
+						});
+					}, { rootMargin: '200px 0px 200px 0px' } );
+					lazyloadBackgrounds.forEach( ( lazyloadBackground ) => {
+						lazyloadBackgroundObserver.observe( lazyloadBackground );
+					} );
+				};
+				const events = [
+					'DOMContentLoaded',
+					'elementor/lazyload/observe',
+				];
+				events.forEach( ( event ) => {
+					document.addEventListener( event, lazyloadRunObserver );
+				} );
+			</script>
+			<link rel='stylesheet' id='e-animations-css' href='https://homemvigor.online/wp-content/plugins/elementor/assets/lib/animations/animations.min.css?ver=3.23.4' media='all' />
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://homemvigor.online/wp-content/cache/min/1/wp-content/plugins/payt-upsell-for-elementor/js/custom.js?ver=1730435052" id="payt_elementor_custom_js-js"></script>
+<script type="rocketlazyloadscript" data-minify="1" data-rocket-src="https://homemvigor.online/wp-content/cache/min/1/wp-content/plugins/payt-upsell-for-elementor/js/data.js?ver=1730435052" id="my-custom-script-js"></script>
+<script type="rocketlazyloadscript" id="rocket-browser-checker-js-after">
+"use strict";var _createClass=function(){function defineProperties(target,props){for(var i=0;i<props.length;i++){var descriptor=props[i];descriptor.enumerable=descriptor.enumerable||!1,descriptor.configurable=!0,"value"in descriptor&&(descriptor.writable=!0),Object.defineProperty(target,descriptor.key,descriptor)}}return function(Constructor,protoProps,staticProps){return protoProps&&defineProperties(Constructor.prototype,protoProps),staticProps&&defineProperties(Constructor,staticProps),Constructor}}();function _classCallCheck(instance,Constructor){if(!(instance instanceof Constructor))throw new TypeError("Cannot call a class as a function")}var RocketBrowserCompatibilityChecker=function(){function RocketBrowserCompatibilityChecker(options){_classCallCheck(this,RocketBrowserCompatibilityChecker),this.passiveSupported=!1,this._checkPassiveOption(this),this.options=!!this.passiveSupported&&options}return _createClass(RocketBrowserCompatibilityChecker,[{key:"_checkPassiveOption",value:function(self){try{var options={get passive(){return!(self.passiveSupported=!0)}};window.addEventListener("test",null,options),window.removeEventListener("test",null,options)}catch(err){self.passiveSupported=!1}}},{key:"initRequestIdleCallback",value:function(){!1 in window&&(window.requestIdleCallback=function(cb){var start=Date.now();return setTimeout(function(){cb({didTimeout:!1,timeRemaining:function(){return Math.max(0,50-(Date.now()-start))}})},1)}),!1 in window&&(window.cancelIdleCallback=function(id){return clearTimeout(id)})}},{key:"isDataSaverModeOn",value:function(){return"connection"in navigator&&!0===navigator.connection.saveData}},{key:"supportsLinkPrefetch",value:function(){var elem=document.createElement("link");return elem.relList&&elem.relList.supports&&elem.relList.supports("prefetch")&&window.IntersectionObserver&&"isIntersecting"in IntersectionObserverEntry.prototype}},{key:"isSlowConnection",value:function(){return"connection"in navigator&&"effectiveType"in navigator.connection&&("2g"===navigator.connection.effectiveType||"slow-2g"===navigator.connection.effectiveType)}}]),RocketBrowserCompatibilityChecker}();
+</script>
+<script id="rocket-preload-links-js-extra">
+var RocketPreloadLinksConfig = {"excludeUris":"\/(?:.+\/)?feed(?:\/(?:.+\/?)?)?$|\/(?:.+\/)?embed\/|\/(index.php\/)?(.*)wp-json(\/.*|$)|\/refer\/|\/go\/|\/recommend\/|\/recommends\/","usesTrailingSlash":"1","imageExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php","fileExt":"jpg|jpeg|gif|png|tiff|bmp|webp|avif|pdf|doc|docx|xls|xlsx|php|html|htm","siteUrl":"https:\/\/homemvigor.online","onHoverDelay":"100","rateThrottle":"3"};
+</script>
+<script type="rocketlazyloadscript" id="rocket-preload-links-js-after">
+(function() {
+"use strict";var r="function"==typeof Symbol&&"symbol"==typeof Symbol.iterator?function(e){return typeof e}:function(e){return e&&"function"==typeof Symbol&&e.constructor===Symbol&&e!==Symbol.prototype?"symbol":typeof e},e=function(){function i(e,t){for(var n=0;n<t.length;n++){var i=t[n];i.enumerable=i.enumerable||!1,i.configurable=!0,"value"in i&&(i.writable=!0),Object.defineProperty(e,i.key,i)}}return function(e,t,n){return t&&i(e.prototype,t),n&&i(e,n),e}}();function i(e,t){if(!(e instanceof t))throw new TypeError("Cannot call a class as a function")}var t=function(){function n(e,t){i(this,n),this.browser=e,this.config=t,this.options=this.browser.options,this.prefetched=new Set,this.eventTime=null,this.threshold=1111,this.numOnHover=0}return e(n,[{key:"init",value:function(){!this.browser.supportsLinkPrefetch()||this.browser.isDataSaverModeOn()||this.browser.isSlowConnection()||(this.regex={excludeUris:RegExp(this.config.excludeUris,"i"),images:RegExp(".("+this.config.imageExt+")$","i"),fileExt:RegExp(".("+this.config.fileExt+")$","i")},this._initListeners(this))}},{key:"_initListeners",value:function(e){-1<this.config.onHoverDelay&&document.addEventListener("mouseover",e.listener.bind(e),e.listenerOptions),document.addEventListener("mousedown",e.listener.bind(e),e.listenerOptions),document.addEventListener("touchstart",e.listener.bind(e),e.listenerOptions)}},{key:"listener",value:function(e){var t=e.target.closest("a"),n=this._prepareUrl(t);if(null!==n)switch(e.type){case"mousedown":case"touchstart":this._addPrefetchLink(n);break;case"mouseover":this._earlyPrefetch(t,n,"mouseout")}}},{key:"_earlyPrefetch",value:function(t,e,n){var i=this,r=setTimeout(function(){if(r=null,0===i.numOnHover)setTimeout(function(){return i.numOnHover=0},1e3);else if(i.numOnHover>i.config.rateThrottle)return;i.numOnHover++,i._addPrefetchLink(e)},this.config.onHoverDelay);t.addEventListener(n,function e(){t.removeEventListener(n,e,{passive:!0}),null!==r&&(clearTimeout(r),r=null)},{passive:!0})}},{key:"_addPrefetchLink",value:function(i){return this.prefetched.add(i.href),new Promise(function(e,t){var n=document.createElement("link");n.rel="prefetch",n.href=i.href,n.onload=e,n.onerror=t,document.head.appendChild(n)}).catch(function(){})}},{key:"_prepareUrl",value:function(e){if(null===e||"object"!==(void 0===e?"undefined":r(e))||!1 in e||-1===["http:","https:"].indexOf(e.protocol))return null;var t=e.href.substring(0,this.config.siteUrl.length),n=this._getPathname(e.href,t),i={original:e.href,protocol:e.protocol,origin:t,pathname:n,href:t+n};return this._isLinkOk(i)?i:null}},{key:"_getPathname",value:function(e,t){var n=t?e.substring(this.config.siteUrl.length):e;return n.startsWith("/")||(n="/"+n),this._shouldAddTrailingSlash(n)?n+"/":n}},{key:"_shouldAddTrailingSlash",value:function(e){return this.config.usesTrailingSlash&&!e.endsWith("/")&&!this.regex.fileExt.test(e)}},{key:"_isLinkOk",value:function(e){return null!==e&&"object"===(void 0===e?"undefined":r(e))&&(!this.prefetched.has(e.href)&&e.origin===this.config.siteUrl&&-1===e.href.indexOf("?")&&-1===e.href.indexOf("#")&&!this.regex.excludeUris.test(e.href)&&!this.regex.images.test(e.href))}}],[{key:"run",value:function(){"undefined"!=typeof RocketPreloadLinksConfig&&new n(new RocketBrowserCompatibilityChecker({capture:!0,passive:!0}),RocketPreloadLinksConfig).init()}}]),n}();t.run();
+}());
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://homemvigor.online/wp-content/themes/hello-elementor/assets/js/hello-frontend.min.js?ver=3.0.1" id="hello-theme-frontend-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://homemvigor.online/wp-content/plugins/elementor/assets/lib/jquery-numerator/jquery-numerator.min.js?ver=0.2.1" id="jquery-numerator-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://homemvigor.online/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.5.1" id="elementor-pro-webpack-runtime-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://homemvigor.online/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.23.4" id="elementor-webpack-runtime-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://homemvigor.online/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.23.4" id="elementor-frontend-modules-js"></script>
+<script type="rocketlazyloadscript" id="elementor-pro-frontend-js-before">
+var ElementorProFrontendConfig = {"ajaxurl":"https:\/\/homemvigor.online\/wp-admin\/admin-ajax.php","nonce":"2f940f5b14","urls":{"assets":"https:\/\/homemvigor.online\/wp-content\/plugins\/elementor-pro\/assets\/","rest":"https:\/\/homemvigor.online\/wp-json\/"},"i18n":{"toc_no_headings_found":"No headings were found on this page."},"shareButtonsNetworks":{"facebook":{"title":"Facebook","has_counter":true},"twitter":{"title":"Twitter"},"linkedin":{"title":"LinkedIn","has_counter":true},"pinterest":{"title":"Pinterest","has_counter":true},"reddit":{"title":"Reddit","has_counter":true},"vk":{"title":"VK","has_counter":true},"odnoklassniki":{"title":"OK","has_counter":true},"tumblr":{"title":"Tumblr"},"digg":{"title":"Digg"},"skype":{"title":"Skype"},"stumbleupon":{"title":"StumbleUpon","has_counter":true},"mix":{"title":"Mix"},"telegram":{"title":"Telegram"},"pocket":{"title":"Pocket","has_counter":true},"xing":{"title":"XING","has_counter":true},"whatsapp":{"title":"WhatsApp"},"email":{"title":"Email"},"print":{"title":"Print"}},"facebook_sdk":{"lang":"pt_PT","app_id":""},"lottie":{"defaultAnimationUrl":"https:\/\/homemvigor.online\/wp-content\/plugins\/elementor-pro\/modules\/lottie\/assets\/animations\/default.json"}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://homemvigor.online/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.5.1" id="elementor-pro-frontend-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://homemvigor.online/wp-content/plugins/elementor/assets/lib/waypoints/waypoints.min.js?ver=4.0.2" id="elementor-waypoints-js"></script>
+<script type="rocketlazyloadscript" id="elementor-frontend-js-before">
+var elementorFrontendConfig = {"environmentMode":{"edit":false,"wpPreview":false,"isScriptDebug":false},"i18n":{"shareOnFacebook":"Partilhar no Facebook","shareOnTwitter":"Partilhar no Twitter","pinIt":"Fix\u00e1-lo","download":"Download","downloadImage":"Descarregar Imagem","fullscreen":"\u00c9cr\u00e3 Inteiro","zoom":"Zoom","share":"Partilhar","playVideo":"Reproduzir v\u00eddeo","previous":"Anterior","next":"Seguinte","close":"Fechar","a11yCarouselWrapperAriaLabel":"Carousel | Horizontal scrolling: Arrow Left & Right","a11yCarouselPrevSlideMessage":"Previous slide","a11yCarouselNextSlideMessage":"Next slide","a11yCarouselFirstSlideMessage":"This is the first slide","a11yCarouselLastSlideMessage":"This is the last slide","a11yCarouselPaginationBulletMessage":"Go to slide"},"is_rtl":false,"breakpoints":{"xs":0,"sm":480,"md":768,"lg":1025,"xl":1440,"xxl":1600},"responsive":{"breakpoints":{"mobile":{"label":"Mobile ao alto","value":767,"default_value":767,"direction":"max","is_enabled":true},"mobile_extra":{"label":"Mobile ao baixo","value":880,"default_value":880,"direction":"max","is_enabled":false},"tablet":{"label":"Tablet Portrait","value":1024,"default_value":1024,"direction":"max","is_enabled":true},"tablet_extra":{"label":"Tablet Landscape","value":1200,"default_value":1200,"direction":"max","is_enabled":false},"laptop":{"label":"Port\u00e1til","value":1366,"default_value":1366,"direction":"max","is_enabled":false},"widescreen":{"label":"Widescreen","value":2400,"default_value":2400,"direction":"min","is_enabled":false}}},"version":"3.23.4","is_static":false,"experimentalFeatures":{"e_optimized_css_loading":true,"e_font_icon_svg":true,"additional_custom_breakpoints":true,"container":true,"container_grid":true,"e_swiper_latest":true,"e_nested_atomic_repeaters":true,"e_optimized_control_loading":true,"e_onboarding":true,"theme_builder_v2":true,"hello-theme-header-footer":true,"home_screen":true,"editor_v2":true,"ai-layout":true,"landing-pages":true,"nested-elements":true,"e_lazyload":true,"form-submissions":true,"e_scroll_snap":true},"urls":{"assets":"https:\/\/homemvigor.online\/wp-content\/plugins\/elementor\/assets\/","ajaxurl":"https:\/\/homemvigor.online\/wp-admin\/admin-ajax.php"},"nonces":{"floatingButtonsClickTracking":"395a30478c"},"swiperClass":"swiper","settings":{"page":[],"editorPreferences":[]},"kit":{"body_background_background":"classic","active_breakpoints":["viewport_mobile","viewport_tablet"],"global_image_lightbox":"yes","lightbox_enable_counter":"yes","lightbox_enable_fullscreen":"yes","lightbox_enable_zoom":"yes","lightbox_enable_share":"yes","lightbox_title_src":"title","lightbox_description_src":"description","hello_header_logo_type":"logo","hello_footer_logo_type":"logo"},"post":{"id":343,"title":"GM%20Brasil%20%E2%80%93%20L01%20%E2%80%93%20Growth%20Brasil","excerpt":"","featuredImage":false}};
+</script>
+<script type="rocketlazyloadscript" data-rocket-src="https://homemvigor.online/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.23.4" id="elementor-frontend-js"></script>
+<script type="rocketlazyloadscript" data-rocket-src="https://homemvigor.online/wp-content/plugins/elementor-pro/assets/js/preloaded-elements-handlers.min.js?ver=3.5.1" id="pro-preloaded-elements-handlers-js"></script>
+<script>window.lazyLoadOptions=[{elements_selector:"img[data-lazy-src],.rocket-lazyload,iframe[data-lazy-src]",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,callback_loaded:function(element){if(element.tagName==="IFRAME"&&element.dataset.rocketLazyload=="fitvidscompatible"){if(element.classList.contains("lazyloaded")){if(typeof window.jQuery!="undefined"){if(jQuery.fn.fitVids){jQuery(element).parent().fitVids()}}}}}},{elements_selector:".rocket-lazyload",data_src:"lazy-src",data_srcset:"lazy-srcset",data_sizes:"lazy-sizes",class_loading:"lazyloading",class_loaded:"lazyloaded",threshold:300,}];window.addEventListener('LazyLoad::Initialized',function(e){var lazyLoadInstance=e.detail.instance;if(window.MutationObserver){var observer=new MutationObserver(function(mutations){var image_count=0;var iframe_count=0;var rocketlazy_count=0;mutations.forEach(function(mutation){for(var i=0;i<mutation.addedNodes.length;i++){if(typeof mutation.addedNodes[i].getElementsByTagName!=='function'){continue}
+if(typeof mutation.addedNodes[i].getElementsByClassName!=='function'){continue}
+images=mutation.addedNodes[i].getElementsByTagName('img');is_image=mutation.addedNodes[i].tagName=="IMG";iframes=mutation.addedNodes[i].getElementsByTagName('iframe');is_iframe=mutation.addedNodes[i].tagName=="IFRAME";rocket_lazy=mutation.addedNodes[i].getElementsByClassName('rocket-lazyload');image_count+=images.length;iframe_count+=iframes.length;rocketlazy_count+=rocket_lazy.length;if(is_image){image_count+=1}
+if(is_iframe){iframe_count+=1}}});if(image_count>0||iframe_count>0||rocketlazy_count>0){lazyLoadInstance.update()}});var b=document.getElementsByTagName("body")[0];var config={childList:!0,subtree:!0};observer.observe(b,config)}},!1)</script><script data-no-minify="1" async src="https://homemvigor.online/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js"></script>	</body>
+</html>
+
+<!-- This website is like a Rocket, isn't it? Performance optimized by WP Rocket. Learn more: https://wp-rocket.me - Debug: cached@1730437434 -->
