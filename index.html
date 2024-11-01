@@ -4,30 +4,53 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Health Page</title>
+  
+  <!-- Importando a fonte Roboto -->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+  
   <style>
+    /* Resetando margens e preenchimentos */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    /* Estilos gerais para o corpo */
+    body, html {
+      font-family: 'Roboto', sans-serif;
+      background-color: red; /* Fundo vermelho preenchendo toda a tela */
+      color: white;
+      overflow-x: hidden; /* Evita rolagem horizontal */
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
     /* Estilos para o cabeçalho */
     .red-header {
-      background-color: red;
-      color: white;
+      width: 100%;
       display: flex;
       flex-direction: column;
       align-items: center;
       padding: 20px;
     }
 
-    /* Centraliza o texto "HEALTH" */
+    /* Ajuste no texto "HEALTH" */
     .red-header h1 {
-      font-size: 3em;
-      margin: 0;
+      font-size: 2em; /* Tamanho de fonte reduzido */
+      margin: 10px 0;
     }
 
     /* Estilos para o letreiro */
     marquee {
       background-color: red;
       color: white;
-      font-size: 1.2em;
+      font-size: 1em;
       padding: 10px;
-      margin: 0;
+      width: 100%;
     }
   </style>
 </head>
@@ -35,16 +58,16 @@
 
   <main id="container">
     <header class="red-header">
-      <!-- Título centralizado no Header -->
+      <!-- Título no Header -->
       <h1>HEALTH</h1>
       <img src="img/lista.png" alt="Imagem de Lista">
     </header>
     
-    <!-- Letreiro com texto branco em fundo vermelho -->
+    <!-- Letreiro com fundo e texto em branco -->
     <marquee>Daily updates on wellness and health - Daily updates on wellness and health - Daily updates on wellness and health - Daily updates on wellness and health</marquee>
     
     <section class="principal">
-      <!-- Conteúdo principal aqui -->
+      <!-- Conteúdo principal -->
     </section>
   </main>
 
