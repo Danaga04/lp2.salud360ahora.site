@@ -4,44 +4,31 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Health Page</title>
-  
-  <!-- Importando a fonte Roboto -->
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
-  
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
   <style>
-    /* Resetando margens e preenchimentos */
-    * {
+    /* Estilos globais */
+    body, html {
       margin: 0;
       padding: 0;
       box-sizing: border-box;
-    }
-
-    /* Estilos gerais para o corpo */
-    body, html {
       font-family: 'Roboto', sans-serif;
-      background-color: red; /* Fundo vermelho preenchendo toda a tela */
-      color: white;
-      overflow-x: hidden; /* Evita rolagem horizontal */
-      min-height: 100vh;
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
     }
 
     /* Estilos para o cabeçalho */
     .red-header {
-      width: 100%;
+      background-color: red;
+      color: white;
       display: flex;
-      flex-direction: column;
+      justify-content: center;
       align-items: center;
       padding: 20px;
+      width: 100vw; /* Preenche toda a largura da tela */
     }
 
-    /* Ajuste no texto "HEALTH" */
+    /* Estilo para o texto "HEALTH" */
     .red-header h1 {
-      font-size: 2em; /* Tamanho de fonte reduzido */
-      margin: 10px 0;
+      font-size: 2em; /* Menor que o original */
+      margin: 0;
     }
 
     /* Estilos para o letreiro */
@@ -50,7 +37,19 @@
       color: white;
       font-size: 1em;
       padding: 10px;
-      width: 100%;
+      width: 100vw; /* Preenche toda a largura da tela */
+      margin: 0;
+    }
+
+    /* Ajuste para dispositivos menores */
+    @media (max-width: 600px) {
+      .red-header h1 {
+        font-size: 1.5em;
+      }
+
+      marquee {
+        font-size: 0.9em;
+      }
     }
   </style>
 </head>
@@ -58,16 +57,16 @@
 
   <main id="container">
     <header class="red-header">
-      <!-- Título no Header -->
+      <!-- Título centralizado no Header -->
       <h1>HEALTH</h1>
-      <img src="img/lista.png" alt="Imagem de Lista">
+      <img src="img/lista.png" alt="Imagem de Lista" style="margin-left: 10px;">
     </header>
     
-    <!-- Letreiro com fundo e texto em branco -->
+    <!-- Letreiro com texto branco em fundo vermelho -->
     <marquee>Daily updates on wellness and health - Daily updates on wellness and health - Daily updates on wellness and health - Daily updates on wellness and health</marquee>
     
     <section class="principal">
-      <!-- Conteúdo principal -->
+      <!-- Conteúdo principal aqui -->
     </section>
   </main>
 
