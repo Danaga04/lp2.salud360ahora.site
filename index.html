@@ -193,381 +193,231 @@
           
           <link rel="prerender" href="https://pay.hotmart.com/D94035991G?checkoutMode=10"/>
 
-          <!-- Botão 1 -->
-            <div id="cta1" class="mt-4 d-none">
-              <a href="https://pay.hotmart.com/123456789?checkoutMode=10" class="btn btn-success btn-lg btn-block" style="text-decoration: none;">
-              <br>
-              <span class="span-btn"> h </span>   
-              <br>
-              </a>
-            </div>
-          </div>
+         
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat en Vivo</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #e9ecef;
+            padding: 20px;
+            padding-right: 40px; /* Agrega un margen extra a la derecha */
+        }
+        .header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            max-width: 600px;
+            margin: auto;
+            margin-bottom: 20px;
+        }
+        .live-indicator {
+            display: flex;
+            align-items: center;
+            font-weight: bold;
+            color: #fff;
+            background-color: #cc0000;
+            padding: 5px 15px;
+            border-radius: 20px;
+            box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+        }
+        .live-circle {
+            width: 12px;
+            height: 12px;
+            background-color: #fff;
+            border-radius: 50%;
+            margin-right: 8px;
+            animation: blink 1s infinite alternate;
+        }
+        @keyframes blink {
+            from { opacity: 1; }
+            to { opacity: 0; }
+        }
+        .viewer-count {
+            font-size: 20px;
+            color: #333;
+            font-weight: bold;
+        }
+        .chat-container {
+            width: 100%;
+            max-width: 600px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            padding: 15px;
+            overflow-y: auto; /* Permite desplazamiento si es necesario */
+            height: 400px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            margin: auto;
+        }
+        .message {
+            display: flex;
+            align-items: flex-start;
+            margin-bottom: 12px;
+            border-bottom: 1px solid #f1f1f1;
+            padding-bottom: 5px;
+        }
+        .avatar {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+            object-fit: cover;
+            object-position: center;
+        }
+        .username {
+            font-weight: bold;
+            color: #cc0000;
+        }
+        .text {
+            margin-left: 5px;
+            color: #444;
+        }
+        .comment-form {
+            display: flex;
+            margin-top: 20px;
+            max-width: 600px;
+            margin: auto;
+        }
+        .comment-input {
+            flex: 1;
+            padding: 10px;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            outline: none;
+        }
+        .comment-button {
+            padding: 10px 20px;
+            border: none;
+            background-color: #cc0000;
+            color: #fff;
+            cursor: pointer;
+            border-radius: 8px;
+            margin-left: 10px;
+            transition: background-color 0.3s;
+        }
+        .comment-button:hover {
+            background-color: #b20000;
+        }
+        .note {
+            font-size: 14px;
+            color: #888;
+            margin-top: 20px;
+            text-align: center;
+        }
+        @media (max-width: 768px) {
+            .chat-container {
+                height: 300px;
+            }
+            .viewer-count {
+                font-size: 18px;
+            }
+            .comment-button {
+                padding: 10px 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="live-indicator">
+            <div class="live-circle"></div>
+            En Vivo
         </div>
-      </div>
-    </header>
+        <div class="viewer-count" id="viewerCount">9.000 espectadores</div>
+    </div>
+    <div class="chat-container" id="chatContainer"></div>
+    <div class="note">
+        El chat está disponible solo para usuarios registrados.
+    </div>
 
-  <section class="comments py-4">
+    <script>
+        // URLs de las imágenes personalizadas
+        const customAvatars = [
+            'https://imgur.com/oxDJauK.png',
+            'https://imgur.com/m5FRjQG.png',
+            'https://imgur.com/DtpsI9B.png',
+            'https://imgur.com/0wftB69.png',
+            'https://imgur.com/WLFVB5U.png',
+            'https://imgur.com/2CLSVpE.png',
+            'https://imgur.com/a8gDpWh.png',
+            'https://imgur.com/jRef6J4.png',
+            'https://imgur.com/2A7Bs5u.png',
+            'https://imgur.com/vNxYkaH.png',
+            'https://imgur.com/Msbyh0y.png',
+            'https://imgur.com/zSOL3wb.png',
+            'https://imgur.com/9klnAPZ.png',
+            'https://imgur.com/kaQcsyx.png',
+            'https://imgur.com/7dQLa4H.png',
+            'https://imgur.com/z9KbwqT.png',
+            'https://imgur.com/4UovXtP.png',
+            'https://imgur.com/S0Zff7W.png'
+        ];
 
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        // Lista de comentarios
+        const comments = [
+            { username: 'Andrés Ramírez', text: '¡Esto está cambiando mi vida!', avatar: customAvatars[0] },
+            { username: 'Pablo Ferrer', text: 'Probé este consejo anoche y mi pareja no puede dejar de hablar de lo increíble que fue.', avatar: customAvatars[1] },
+            { username: 'Jorge Herrera', text: 'Nunca había vivido algo tan poderoso. Este contenido me abrió los ojos.', avatar: customAvatars[2] },
+            { username: 'Cristian Vargas', text: 'Después de implementarlo, mi relación mejoró al 100%. ¡Gracias!', avatar: customAvatars[3] },
+            { username: 'Luis Cabrera', text: '¡Esto me voló la mente! Mi esposa me dijo que nunca había vivido algo tan emocionante.', avatar: customAvatars[4] },
+            { username: 'Esteban Morales', text: 'No lo podía creer al principio, pero ahora no paro de ver los resultados.', avatar: customAvatars[5] },
+            { username: 'Diego Montoya', text: 'Este video cambió la dinámica de mi relación. ¡Un antes y después!', avatar: customAvatars[6] },
+            { username: 'Fabián Gutiérrez', text: 'Lo implementé y mi pareja no para de hablar de lo especial que fue.', avatar: customAvatars[7] },
+            { username: 'Manuel Torres', text: 'Nunca pensé que algo tan simple pudiera tener un impacto tan profundo.', avatar: customAvatars[8] },
+            { username: 'Raúl López', text: '¡Este contenido es oro puro! Mi relación está mejorando cada día gracias a esto.', avatar: customAvatars[9] },
+            { username: 'Sergio Díaz', text: 'Es la mejor decisión que tomé en años.', avatar: customAvatars[10] },
+            { username: 'Ricardo García', text: 'Mis amigos no dejan de preguntarme qué hice para cambiar tanto.', avatar: customAvatars[11] },
+            { username: 'Héctor Gómez', text: 'Esto me devolvió la confianza que había perdido.', avatar: customAvatars[12] },
+            { username: 'Carlos Mendoza', text: '¡Esto no tiene precio! Lo recomiendo al 100%.', avatar: customAvatars[13] },
+            { username: 'Juan Pérez', text: 'Puedo ver cómo mi relación ha mejorado cada día desde que lo probé.', avatar: customAvatars[14] },
+            { username: 'Fernando Silva', text: 'Jamás imaginé que algo así podría ser tan efectivo.', avatar: customAvatars[15] },
+            { username: 'Gonzalo Reyes', text: 'No dejo de recibir elogios por cómo mejoré.', avatar: customAvatars[16] },
+            { username: 'Adrián Castro', text: 'Esto es lo mejor que he encontrado en mucho tiempo.', avatar: customAvatars[17] }
+        ];
 
-    <script>$.get("https://ipinfo.io/json", function (response) {
-        $("#address").html(response.city);
-      }, "jsonp");
+        const chatContainer = document.getElementById('chatContainer');
+        let currentCommentIndex = 0;
+
+        function addCommentToChat(comment) {
+            const messageElement = document.createElement('div');
+            messageElement.classList.add('message');
+
+            // Verifica si o comentário tem um avatar específico
+            const avatarElement = document.createElement('img');
+            avatarElement.classList.add('avatar');
+            avatarElement.src = comment.avatar;
+
+            const textElement = document.createElement('div');
+            textElement.classList.add('text');
+            textElement.innerHTML = `<span class="username">${comment.username}:</span> ${comment.text}`;
+
+            messageElement.appendChild(avatarElement);
+            messageElement.appendChild(textElement);
+            chatContainer.appendChild(messageElement);
+        }
+
+        function updateViewerCount() {
+            const viewerCountElement = document.getElementById('viewerCount');
+            const currentViewerCount = parseInt(viewerCountElement.textContent.replace(/\D/g, ''));
+            const change = Math.floor(Math.random() * 21) - 10;
+            const newViewerCount = Math.max(8000, currentViewerCount + change);
+            viewerCountElement.textContent = `${newViewerCount} espectadores`;
+        }
+
+        function simulateChat() {
+            addCommentToChat(comments[currentCommentIndex]);
+            currentCommentIndex = (currentCommentIndex + 1) % comments.length;
+        }
+
+        setInterval(simulateChat, 3000); // Adicionar comentário a cada 3 segundos
+        setInterval(updateViewerCount, 1000); // Atualizar o contador de espectadores a cada 1 segundo
     </script>
-      
-    <div class="container">
-      <div class="row justify-content-center">
-        <div class="col-lg-8">
-          <div class="fb-comments" style="margin-top: 5px;">
-            <div class="fb-comments-header">
-              <span>21 de 174 comentarios</span>
-            </div>
-            <div class="fb-comments-wrapper" id="2">
-              <table class="fb-comments-comment">
-                <tbody>
-                  <tr>
-                    <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-h6.jpeg"></td>
-                    <td>
-                      <font class="fb-comments-comment-name">
-                        <name>Santiago Gómez</name>
-                      </font>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-text">Gracias a este video, hoy me despertó de una manera tan intensa que no pude resistirme... Primero deslizó su mano lentamente por dentro de mis bragas, luego, con una mirada penetrante, me la llevó a la boca, dejándola completamente mojada. Cuando pensaba que no podía más, me dijo al oído: "Haz que me lo vuelvas a mojar todo otra vez..." No tengo palabras para describir lo explosivo que ha sido este momento gracias a tu video. ¡Es pura magia, infinitas gracias!</td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-actions">
-                      <like>Curtir</like>
-                      ·
-                      <reply>Responder</reply>
-                      ·
-                      <likes>8</likes>
-
-                      <date>4 min</date>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="fb-comments-wrapper" id="3">
-              <table class="fb-comments-comment">
-                <tbody>
-                  <tr>
-                    <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-h1.jpeg"></td>
-                    <td>
-                      <font class="fb-comments-comment-name">
-                        <name>Andrés Torres</name>
-                      </font>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-text">Aquí en <span id="address" style="color:#000000;">Salvador</span> sólo hablan de este truco,</td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-actions">
-                      <like>Curtir</like>
-                      ·
-                      <reply>Responder</reply>
-                      ·
-                      <likes>9</likes>
-
-                      <date>5 min</date>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="fb-comments-wrapper" id="4">
-              <table class="fb-comments-comment">
-                <tbody>
-                  <tr>
-                    <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-h2.jpeg"></td>
-                    <td>
-                      <font class="fb-comments-comment-name">
-                        <name>Juan Carlos Martínez</name>
-                      </font>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-text">¡No lo podía creer! Después de aplicar lo que vi en el video, mi novia quedó completamente sorprendida. Por primera vez, conseguí darle varios orgasmos uno tras otro, sin descanso. La forma en que reaccionaba... ¡era algo que nunca había experimentado antes! Si quieres hacer que tu chica te vea como el mejor amante de su vida, tienes que ver este video completo. ¡Créeme, cambiará tu relación para siempre!</td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-actions">
-                      <like>Curtir</like>
-                      ·
-                      <reply>Responder</reply>
-                      ·
-                      <likes>11</likes>
-
-                      <date>12 min</date>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="fb-comments-wrapper" id="5">
-              <table class="fb-comments-comment">
-                <tbody>
-                  <tr>
-                    <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-h3.jpeg"></td>
-                    <td>
-                      <font class="fb-comments-comment-name">
-                        <name>Carlos Castro</name>
-                      </font>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-text">Anoche, nunca había visto algo así. Ella no paraba de moverse, estremecida de placer, mientras yo, sin esfuerzo, la llevaba al límite una y otra vez. Era como si su cuerpo fuera una fuente inagotable de orgasmos. ¿Quieres saber cómo lo logré? No te pierdas ni un segundo de este video y descubre el secreto para hacer que cualquier mujer pierda el control en la cama.</td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-actions">
-                      <like>Curtir</like>
-                      ·
-                      <reply>Responder</reply>
-                      ·
-                      <likes>15</likes>
-
-                      <date>19 min</date>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="fb-comments-wrapper" id="6">
-              <table class="fb-comments-comment">
-                <tbody>
-                  <tr>
-                    <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-h4.jpeg"></td>
-                    <td>
-                      <font class="fb-comments-comment-name">
-                        <name>Luis Fernando Herrera</name>
-                      </font>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-text">Ayer fue increíble. Nunca había escuchado a mi chica gemir tan fuerte en mi vida. De hecho, esta mañana me desperté con ella rogando por más, sin poder creer lo que pasó anoche. Y todo lo aprendí viendo este video… Si quieres descubrir cómo hacer que ella experimente múltiples orgasmos seguidos, no puedes perdértelo. </td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-actions">
-                      <like>Curtir</like>
-                      ·
-                      <reply>Responder</reply>
-                      ·
-                      <likes>17</likes>
-
-                      <date>24 min</date>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="fb-comments-wrapper" id="7">
-              <table class="fb-comments-comment">
-                <tbody>
-                  <tr>
-                    <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-h5.jpeg"></td>
-                    <td>
-                      <font class="fb-comments-comment-name">
-                        <name>Diego Ramírez</name>
-                      </font>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-text">¡Ноmbrе! Nо sе quе hау еn еstе sесrеtо пеrо еllа нунса hа тенидо аnаl, ¡аhоrа tоdоs lоs díаs quiеrе dármеlо! ¡Quе соsа!</td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-actions">
-                      <like>Curtir</like>
-                      ·
-                      <reply>Responder</reply>
-                      ·
-                      <likes>18</likes>
-
-                      <date>26 min</date>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <div class="fb-comments-wrapper" id="9">
-              <table class="fb-comments-comment">
-                <tbody>
-                  <tr>
-                    <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-h7.jpeg">
-                    </td>
-                    <td>
-                      <font class="fb-comments-comment-name">
-                        <name>Alejandro López</name>
-                      </font>
-                    </td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-text">¡Qué video tan sensacional! Me alegra haberlo visto hasta el final.</td>
-                  </tr>
-                  <tr>
-                    <td class="fb-comments-comment-actions">
-                      <like>Curtir</like>
-                      ·
-                      <reply>Responder</reply>
-                      ·
-                      <likes>22</likes>
-
-                      <date>39 min</date>
-                    </td>
-                  </tr>
-                </tbody>
-              </table>
-            </div>
-            <button class="fb-comments-loadmore" onclick="javascript:loadMore();">Ver mais
-              comentários</button>
-            <div style="display:none" id="more">
-              <div class="fb-comments-wrapper">
-                <table class="fb-comments-comment" id="10">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-h8.jpeg">
-                      </td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Carlos Alberto Vargas</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">¡¡¡¡sасudió lаs рiеrnаs durаntе 12 hоrаs sеguidаs, еsо еs mаgiа, у hоу quеríа más!!!!</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>41</likes>
-
-                        <date>1 h</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="11">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-m7.jpeg">
-                      </td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Sebastián Díaz</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">que sensación, me ha gustado el video, lo he compartido con todo el mundo....</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>40</likes>
-
-                        <date>1 h</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="12">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-m9.jpeg">
-                      </td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Gabriel Rivas</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Esa fue la solución para mí, gracias</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>47</likes>
-
-                        <date>1 h</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper" id="13">
-                <table class="fb-comments-comment">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-m7.jpeg"></td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Esteban Jiménez</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">hоlа, sоу mаrсоs, у vеngо а соntаrоs mi histоriа. mi mujеr аl рrinсiрiо dе lа rеlасión siеmрrе fuе mаrаvillоsа, реrо соn еl tiеmро у dеsрués dе 12 аñоs dе mаtrimоniо, lаs соsаs fuеrоn еmреоrаndо, ареnаs tеníаmоs sехо, у сuаndо lо hасíаmоs еrа unа vеz аl mеs соmо muсhо. уо lа vеrdаd еs quе реnsаbа quе еrа роr еl еstrés, реrо nо еrа аsí. сuаndо vоlví tеmрrаnо, mе lа еnсоntré а сuаtrо раtаs tеniеndо sехо аnаl, соsа quе mе dijо quе lе dоlíа. Vоlviеndо аntеs dе lа саrniсеríа, lа рillé соn оtrо tíо, lа еnсоntré а сuаtrо раtаs tеniеndо sехо аnаl, соsа quе mе dijо quе lе dоlíа. finаlmеntе, nоs sераrаmоs у grасiаs а еstе vídео, еnсоntré аl аmоr dе mi vidа, quе hоу vivе mis mеjоrеs díаs, у сrео quе еllа tаmbién vivе sus mеjоrеs nосhеs. ¡grасiаs!</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>50</likes>
-
-                        <date>1 h</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-              <div class="fb-comments-wrapper">
-                <table class="fb-comments-comment" id="14">
-                  <tbody>
-                    <tr>
-                      <td rowspan="3" class="fb-comments-comment-img"><img src="./assets/img/comentarios/sas-m9.jpeg">
-                      </td>
-                      <td>
-                        <font class="fb-comments-comment-name">
-                          <name>Javier Rojas</name>
-                        </font>
-                      </td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-text">Me ha encantado el video, me gusta que haya una pequeña sorpresa para los que lo vean hasta el final</td>
-                    </tr>
-                    <tr>
-                      <td class="fb-comments-comment-actions">
-                        <like>Curtir</like>
-                        ·
-                        <reply>Responder</reply>
-                        ·
-                        <likes>66</likes>
-
-                        <date>1 h</date>
-                      </td>
-                    </tr>
-                  </tbody>
-                </table>
-              </div>
-            </div>
-          </div>
+</body>
+</html>
   
 <!-- Botão 2 -->
             <div id="cta2" class="mt-4 d-none">
