@@ -19,13 +19,12 @@
 ></script>
 
 
-<div class="bar-topo" style="background:#ff0000; color: #fff; padding: 10px 0; text-align: center;" bis_skin_checked="1">
-  <div class="container" style="font-size: 20px; font-weight: bold;" bis_skin_checked="1"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script>$.get("https://ipinfo.io/json", function (response) {
+<div class="container" style="font-size: 20px; font-weight: bold;" bis_skin_checked="1"><script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script>$.get("https://ipinfo.io/json", function (response) {<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script><script>$.get("https://ipinfo.io/json", function (response) {
 $("#ip").html("IP: " + response.ip);
 $("#address").html(response.city + ", en " + response.region);
 $("#details").html(JSON.stringify(response, null, 4));
 }, "jsonp");</script>
-<center>Tú y algunos hombres cercanos <span id="address"></span> han sido seleccionados para ver el vídeo a continuación...</center>
+<center>Tú y algunos hombres de <span id="address"></span> han sido seleccionados para participar en este programa.</center>
 
 
 <link rel="preload" href="https://scripts.converteai.net/80d0b89d-7901-4c62-bf15-807e2dab2483/players/6753636d7dd8f271bdf634d4/player.js" as="script">
